@@ -1,0 +1,657 @@
+{% extends "base.html" %}
+{% block title %}Dyson Sphere{% endblock title %}
+
+{% block body %} 
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dyson Sphere | Devraj’s Space Research</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/dyson.css' %}">
+</head>
+
+<body>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<section class="enhanced-hero">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg');"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg');"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/1938348/pexels-photo-1938348.jpeg');"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-content-box">
+<div class="hero-content text-center">
+  <h1>Constructing the Dyson Sphere</h1>
+  <p>Harness the full energy of the stars — a vision from science to supremacy.</p>
+  <a href="#learn-more" class="btn-cta">Learn More</a>
+</div>
+  </div>
+
+  <div class="floating-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+</section>
+
+{% comment %} thi is remaining time section {% endcomment %}
+
+
+<section class="hero-countdown">
+  <div class="countdown-container">
+    <h1 class="hero-heading">MISSION LAUNCH IN</h1>
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <div class="number" id="years">00</div>
+        <div class="label">YEARS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="months">00</div>
+        <div class="label">MONTHS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="days">000</div>
+        <div class="label">DAYS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is third section {% endcomment %}
+
+<section class="dyson-section">
+  <h2 class="dyson-title">Dyson Sphere Mission</h2>
+  <p class="dyson-subtitle">Powering civilizations beyond stars.</p>
+
+  <div class="dyson-grid">
+    <div class="dyson-card">
+      <div class="dyson-icon">⭐</div>
+      <h3 class="dyson-card-title">Stellar Energy Capture</h3>
+      <p class="dyson-card-text">Harness energy directly from stars to power interstellar colonies.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">99.7%</span>
+          <span class="stat-label">Efficiency Rate</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">10^26</span>
+          <span class="stat-label">Watts Captured</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Solar Collectors</span>
+        <span class="feature-tag">Energy Conversion</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🛰️</div>
+      <h3 class="dyson-card-title">Modular Sphere Structures</h3>
+      <p class="dyson-card-text">Deploy millions of modular satellites to orbit and capture energy efficiently.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">2.5M</span>
+          <span class="stat-label">Satellites</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">360°</span>
+          <span class="stat-label">Coverage</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Self-Assembly</span>
+        <span class="feature-tag">Nano-Materials</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🤖</div>
+      <h3 class="dyson-card-title">AI-Controlled Systems</h3>
+      <p class="dyson-card-text">Utilize intelligent systems for construction, maintenance, and data optimization.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Monitoring</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">0.001%</span>
+          <span class="stat-label">Error Rate</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Machine Learning</span>
+        <span class="feature-tag">Predictive Analysis</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">📡</div>
+      <h3 class="dyson-card-title">Deep Space Transmission</h3>
+      <p class="dyson-card-text">Beam collected energy to Earth or Mars with zero-loss quantum relays.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">0%</span>
+          <span class="stat-label">Energy Loss</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">8 mins</span>
+          <span class="stat-label">Earth Transit</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Quantum Beaming</span>
+        <span class="feature-tag">Multi-Target</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is fourth section {% endcomment %}
+
+<section class="dyson-model-section">
+  <!-- Background Video -->
+  <div class="background-video">
+    <video autoplay muted loop class="video-bg">
+      <source src="static/dyson.mp4" type="video/mp4">
+      <!-- Fallback for browsers that don't support video -->
+      <div class="video-fallback"></div>
+    </video>
+  </div>
+
+  <!-- Overlay Content -->
+  <div class="video-overlay">
+    <!-- Top Content Overlay -->
+    <div class="overlay-content">
+      <div class="intro-badge">
+        <span class="badge-icon">🌟</span>
+        <span class="badge-text">DSRO Interactive Experience</span>
+      </div>
+      
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+          <span class="stat-number">10^26</span>
+          <span class="stat-label">Watts of Power</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🛰️</div>
+          <span class="stat-number">2.5M</span>
+          <span class="stat-label">Solar Collectors</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌌</div>
+          <span class="stat-number">150M</span>
+          <span class="stat-label">Kilometers Diameter</span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h2 class="dyson-heading">Explore the Dyson Sphere</h2>
+        <p class="dyson-subheading">
+          Dive into our interactive 3D model to understand the scale and complexity of one of humanity's greatest engineering visions.
+        </p>
+      </div>
+
+      <div class="construction-phases">
+        <div class="phase-item">
+          <span class="phase-number">01</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Orbital Assembly</h4>
+            <p class="phase-desc">Deploy framework satellites</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">02</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Ring Formation</h4>
+            <p class="phase-desc">Connect energy collection rings</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">03</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Sphere Completion</h4>
+            <p class="phase-desc">Complete stellar enclosure</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon">🔬</div>
+          <span class="highlight-text">Quantum Energy</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">⚛️</div>
+          <span class="highlight-text">Nano-Materials</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🤖</div>
+          <span class="highlight-text">AI Assembly</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">📡</div>
+          <span class="highlight-text">Deep Space</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} technology challenges {% endcomment %}
+
+<section class="challenges-section">
+  <div class="challenges-container">
+    <div class="section-header">
+      <h2 class="section-heading">TECHNOLOGICAL CHALLENGES + SOLUTIONS</h2>
+      <p class="section-description">
+        Engineering a Dyson Sphere requires overcoming humanity's greatest technological barriers. Our breakthrough solutions transform impossibilities into pathways of stellar dominance.
+      </p>
+    </div>
+
+    <div class="challenges-content">
+      <div class="challenge-item">
+        <h3 class="challenge-title">Orbital Stability & Control Systems</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Maintaining perfect orbital harmony for millions of satellites around stellar masses while preventing gravitational collapse and collision cascades that could devastate the entire Dyson infrastructure.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Quantum-synchronized positioning matrices with predictive gravitational modeling algorithms ensure flawless orbital choreography through ion propulsion systems and AI-controlled gravitational mapping technology.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Interstellar Communication Networks</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Achieving real-time coordination across light-years where traditional electromagnetic signals dissolve into the cosmic void, creating communication blackouts for galactic-scale operations.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Quantum entanglement communication webs create instantaneous data highways spanning galactic distances with zero-latency transmission protocols and autonomous AI systems maintaining perfect coordination.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Advanced Thermal Management</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Surviving and harnessing devastating thermal energy of stellar cores that instantly vaporize conventional materials while maintaining operational integrity of sensitive quantum systems.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Revolutionary metamaterial heat dissipators redirect deadly stellar radiation into pure usable energy while maintaining sub-zero operational cores through liquid helium cooling loops and radiative fins.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Large-Scale Space Manufacturing</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Constructing trillions of precision components in the absolute void of space without terrestrial infrastructure or traditional manufacturing paradigms at unprecedented scales.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Self-replicating automated factories harvest materials from asteroid belts using advanced 3D printing technology and molecular assemblers, exponentially expanding manufacturing capabilities throughout the solar system.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Energy Distribution Systems</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Efficiently transmitting captured stellar energy across vast distances to Earth, Mars, and other planetary colonies without significant power loss during transmission through space.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Quantum energy beaming technology enables zero-loss power transmission through focused energy streams with multi-target distribution networks and intelligent load balancing systems.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Structural Integrity Maintenance</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Ensuring long-term structural stability of massive components exposed to extreme cosmic radiation, micro-meteorite impacts, and gravitational stresses over centuries of operation.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Self-healing materials with molecular repair capabilities automatically fix damage while distributed sensor networks monitor structural health and robotic maintenance swarms perform preventive repairs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is impact section {% endcomment %}
+
+
+
+
+
+<section class="impact-section">
+  <div class="impact-container">
+    <div class="section-header">
+      <h2 class="section-heading">IMPACT & BENEFITS TO HUMANITY</h2>
+      <p class="section-description">
+        The Dyson Sphere represents humanity's transformation from planetary limitations to stellar mastery through revolutionary engineering solutions.
+      </p>
+    </div>
+
+    <div class="benefits-showcase">
+      <div class="showcase-container">
+        <div class="benefit-slide active">
+          <h3 class="benefit-title">UNLIMITED CLEAN ENERGY</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Challenge:</strong> Current energy systems cannot meet growing global demand without environmental destruction and resource depletion.
+            </p>
+            <p class="benefit-text">
+              <strong>Solution:</strong> Dyson Sphere technology captures complete stellar output, providing 400 trillion times more energy than humanity currently uses.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">TERRAFORMING CAPABILITIES</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Challenge:</strong> Humanity remains confined to one vulnerable planet with no viable alternatives for large-scale colonization.
+            </p>
+            <p class="benefit-text">
+              <strong>Solution:</strong> Unlimited energy enables atmospheric processors and climate control systems to transform dead worlds into thriving ecosystems.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">SURVIVAL OF HUMANITY</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Challenge:</strong> Existential threats could eliminate human civilization in single catastrophic events with no backup plan.
+            </p>
+            <p class="benefit-text">
+              <strong>Solution:</strong> Distributed civilization across multiple star systems ensures species survival through technological redundancy.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">INTERSTELLAR COMMUNICATION</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Challenge:</strong> Traditional communication fails across galactic distances due to signal degradation and transmission delays.
+            </p>
+            <p class="benefit-text">
+              <strong>Solution:</strong> Quantum entanglement networks create instantaneous communication channels across light-years.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-controls">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+      </div>
+    </div>
+
+    
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("benefit-slide");
+      let indicators = document.getElementsByClassName("indicator");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (let i = 0; i < indicators.length; i++) {
+        indicators[i].classList.remove("active");
+      }
+      
+      slides[slideIndex-1].classList.add("active");
+      indicators[slideIndex-1].classList.add("active");
+    }
+
+    // Auto advance slides
+    setInterval(() => {
+      changeSlide(1);
+    }, 6000);
+  </script>
+</section>
+
+
+{% comment %} this is faq {% endcomment %}
+
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="section-header">
+      <h2 class="section-heading">FREQUENTLY ASKED QUESTIONS</h2>
+      <p class="section-description">
+        Common questions about the Dyson Sphere Research Organization and our revolutionary stellar engineering project.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What's a Dyson Sphere?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            A Dyson Sphere is a hypothetical megastructure that completely surrounds a star to capture and harness its entire energy output. Originally proposed by physicist Freeman Dyson in 1960, it represents the ultimate achievement in stellar engineering - transforming humanity from a planetary species to a Type II civilization capable of utilizing stellar-scale energy resources.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Is it possible with today's technology?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            While we don't have the technology today, a Dyson Sphere is theoretically possible using advanced materials science, self-replicating robotics, and orbital mechanics. The main challenges include developing ultra-lightweight metamaterials, automated construction systems, and solving the enormous scale of coordination required. Current estimates suggest such technology could be developed within 50-100 years with sufficient investment and research focus.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">How will it be funded?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            The Dyson Sphere project requires unprecedented international cooperation and funding mechanisms. Potential sources include: government space agencies forming a global consortium, private aerospace companies investing in long-term returns, international bonds backed by future energy profits, and gradually scaling from smaller orbital solar arrays to full sphere construction. The investment would be massive but the returns - unlimited clean energy - would transform the global economy.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">How long would construction take?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Conservative estimates suggest 50-200 years for complete construction, depending on available resources and technological advancement rate. The project would begin with small orbital collectors, gradually expanding through self-replicating manufacturing systems. Initial energy returns would begin within the first decade, providing funding and resources for accelerated expansion phases.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What materials would be needed?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            A Dyson Sphere would require mining entire asteroid belts and possibly dismantling planets like Mercury for raw materials. Key materials include: ultra-light carbon nanotubes for structural elements, silicon and rare earth metals for photovoltaic systems, aluminum and titanium for framework construction, and advanced metamaterials for heat resistance. The total mass required would be approximately 2.3 × 10²³ kilograms.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are the main risks and challenges?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Major challenges include: coordinating construction across astronomical distances, preventing structural collapse under gravitational stress, managing thermal loads from stellar radiation, avoiding space debris and micro-meteorite damage, ensuring long-term political stability for multi-generational projects, and developing fail-safe systems for maintenance and repair. Each challenge requires breakthrough technologies and unprecedented international cooperation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentNode;
+      const answer = faqItem.querySelector('.faq-answer');
+      const icon = element.querySelector('.toggle-icon');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.toggle-icon').textContent = '+';
+        }
+      });
+      
+      // Toggle current FAQ
+      if (faqItem.classList.contains('active')) {
+        faqItem.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        faqItem.classList.add('active');
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</section>
+{% comment %} this is cta {% endcomment %}
+
+<section class="cta-section">
+  <div class="bg-overlay"></div>
+  <div class="bg-image"></div>
+  
+  <div class="cta-container">
+    <div class="mission-header">
+      <h2 class="cta-heading">THIS IS NOT SCIENCE FICTION. IT'S OUR NEXT STEP.</h2>
+      <div class="header-divider">
+        <div class="divider-glow"></div>
+      </div>
+      <p class="cta-description">
+        Join us as we unlock the ultimate energy source for humanity. The future of our species depends on the choices we make today.
+      </p>
+    </div>
+
+    <div class="mission-call">
+      <div class="call-content">
+        <h3 class="call-title">JOIN THE MISSION</h3>
+        <p class="call-text">
+          Be part of humanity's greatest engineering achievement. Together, we will transform our species from planetary inhabitants to cosmic engineers.
+        </p>
+        
+        <div class="cta-buttons">
+          <button class="primary-btn">
+            <span class="btn-text">JOIN US</span>
+            <div class="btn-particles"></div>
+          </button>
+          <button class="secondary-btn">
+            <span class="btn-text">SUPPORT THE MISSION</span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-commitment">
+      <div class="commitment-border"></div>
+      <p class="commitment-text">
+        The Dyson Sphere Research Organization is humanity's pathway to the stars. Every contribution, every voice, every supporter brings us closer to securing our civilization's infinite future.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.hero-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true,
+    },
+  });
+</script>
+<script>
+  const targetDate = new Date("3027-12-31T00:00:00Z");
+
+  function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.querySelector(".countdown-grid").innerHTML = "<h2>Mission Launched!</h2>";
+      return;
+    }
+
+    const years = targetDate.getFullYear() - now.getFullYear();
+    const months = targetDate.getMonth() - now.getMonth();
+    const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24)) % 30;
+
+    document.getElementById("years").textContent = String(years).padStart(2, '0');
+    document.getElementById("months").textContent = String(months >= 0 ? months : months + 12).padStart(2, '0');
+    document.getElementById("days").textContent = String(days).padStart(3, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+{% endblock body %}

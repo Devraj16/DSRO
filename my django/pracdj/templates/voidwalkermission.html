@@ -1,0 +1,697 @@
+{% extends "base.html" %}
+{% block title %}Mission Voidwalker{% endblock title %}
+
+{% block body %} 
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sending Rovers or Probes Outside the Observable Universe | Space Research</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/dyson.css' %}">
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <section class="enhanced-hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/11657224/pexels-photo-11657224.jpeg');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/30596248/pexels-photo-30596248.jpeg');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/32862970/pexels-photo-32862970.jpeg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content-box">
+      <div class="hero-content text-center">
+        <h1>Sending Rovers or Probes Outside the Observable Universe</h1>
+        <p>Exploring the impossibilities and limitations of interstellar exploration beyond known cosmic boundaries.</p>
+        <a href="#learn-more" class="btn-cta">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card bg-dark text-white border-light shadow-sm p-4">
+            <h2 class="mb-3 text-center">Sending Rovers or Probes Outside the Observable Universe</h2>
+            <ul class="mb-0">
+              <li>Traveling beyond the known boundaries of the universe is well beyond human capability due to the universe's expansion faster than the speed of light and lack of physical "edges."</li>
+              <li>Current physics forbids faster-than-light travel, so reaching or exploring beyond the observable universe is deemed impossible.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+
+  {% comment %} thi is remaining time section {% endcomment %}
+
+
+<section class="hero-countdown">
+  <div class="countdown-container">
+    <h1 class="hero-heading">MISSION LAUNCH IN</h1>
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <div class="number" id="years">00</div>
+        <div class="label">YEARS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="months">00</div>
+        <div class="label">MONTHS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="days">000</div>
+        <div class="label">DAYS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is the third section {% endcomment %}
+
+
+<section class="dyson-section">
+  <h2 class="dyson-title">Observable Universe Exploration</h2>
+  <p class="dyson-subtitle">Understanding the limits of cosmic exploration.</p>
+
+  <div class="dyson-grid">
+    <div class="dyson-card">
+      <div class="dyson-icon">🌌</div>
+      <h3 class="dyson-card-title">Observable Universe Boundary</h3>
+      <p class="dyson-card-text">The universe's observable boundary is defined by how far light has traveled since the Big Bang.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">13.8B</span>
+          <span class="stat-label">Years Old</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">46.5B</span>
+          <span class="stat-label">Light-Years Radius</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Cosmic Horizon</span>
+        <span class="feature-tag">Light Speed Limit</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🚀</div>
+      <h3 class="dyson-card-title">Physical Limitations</h3>
+      <p class="dyson-card-text">Current physics forbids faster-than-light travel, making exploration beyond impossible.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">299M</span>
+          <span class="stat-label">m/s Light Speed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">0%</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Physics Laws</span>
+        <span class="feature-tag">Speed Barrier</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">📏</div>
+      <h3 class="dyson-card-title">Cosmic Expansion</h3>
+      <p class="dyson-card-text">Universe expansion faster than light makes distant regions unreachable forever.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Faster</span>
+          <span class="stat-label">Than Light</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Distance</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Hubble Flow</span>
+        <span class="feature-tag">Space-Time</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🛸</div>
+      <h3 class="dyson-card-title">Probe Impossibility</h3>
+      <p class="dyson-card-text">No rover or probe can physically reach or cross the observable universe horizon.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Missions Possible</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Never</span>
+          <span class="stat-label">Achievable</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Physical Barrier</span>
+        <span class="feature-tag">Unreachable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% comment %} this is fourth section {% endcomment %}
+
+<section class="dyson-model-section">
+  <!-- Background Images -->
+  <div class="background-video">
+    <div class="video-bg" id="video-bg" style="
+      background-image: url('https://static.wikia.nocookie.net/alldimensions/images/0/02/Universe-expanding-acceleration-1.jpg/revision/latest?cb=20180818180210');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+    <!-- Fallback background -->
+    <div class="video-fallback" style="
+      background-image: url('https://images.pexels.com/photos/8474472/pexels-photo-8474472.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+  </div>
+
+  <!-- Overlay Content -->
+  <div class="video-overlay">
+    <!-- Top Content Overlay -->
+    <div class="overlay-content">
+      <div class="intro-badge">
+        <span class="badge-icon">🌌</span>
+        <span class="badge-text">Observable Universe Exploration</span>
+      </div>
+      
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-icon">📏</div>
+          <span class="stat-number">46.5B</span>
+          <span class="stat-label">Light-Years Radius</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <span class="stat-number">13.8B</span>
+          <span class="stat-label">Years Old</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🚀</div>
+          <span class="stat-number">0%</span>
+          <span class="stat-label">Success Rate</span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h2 class="dyson-heading">Journey Past the Observable</h2>
+        <p class="dyson-subheading">
+          Traveling beyond the universe’s known limits is currently impossible due to its faster-than-light expansion and absence of physical edges.
+        </p>
+      </div>
+
+      <div class="construction-phases">
+        <div class="phase-item">
+          <span class="phase-number">01</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Observable Boundary</h4>
+            <p class="phase-desc">Light travel limit since Big Bang</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">02</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Physics Limitations</h4>
+            <p class="phase-desc">Faster-than-light travel forbidden</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">03</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Impossible Mission</h4>
+            <p class="phase-desc">Beyond technological capability</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon">⚡</div>
+          <span class="highlight-text">Light Speed</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🌌</div>
+          <span class="highlight-text">Cosmic Horizon</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">📏</div>
+          <span class="highlight-text">Space Expansion</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🚫</div>
+          <span class="highlight-text">Unreachable</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{% comment %} this is challenges {% endcomment %}
+
+<section class="challenges-section">
+  <div class="challenges-container">
+    <div class="section-header">
+      <h2 class="section-heading">COSMIC EXPLORATION CHALLENGES + IMPOSSIBILITIES</h2>
+      <p class="section-description">
+        Sending rovers or probes beyond the observable universe faces fundamental barriers that no technology can overcome. These physical limitations reveal the absolute boundaries of cosmic exploration.
+      </p>
+    </div>
+
+    <div class="challenges-content">
+      <div class="challenge-item">
+        <h3 class="challenge-title">Observable Universe Boundary</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> The observable universe's boundary is not a physical edge but a limit defined by how far light has traveled since the Big Bang, creating an impenetrable information horizon.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> No technology can overcome this fundamental limit since it's based on the age of the universe itself and the finite speed of light, making exploration beyond impossible by definition.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Faster-Than-Light Travel Prohibition</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Current physics forbids faster-than-light travel as it would violate causality and the fundamental structure of space-time, making distant regions permanently unreachable.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Einstein's relativity demonstrates that approaching light speed requires infinite energy, while exceeding it creates paradoxes that break the laws of physics entirely.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Cosmic Expansion Acceleration</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> The universe's expansion causes distant regions to recede faster than light speed, creating an ever-increasing gap that no probe could bridge.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Dark energy drives accelerating expansion, meaning regions beyond the observable universe are moving away from us at superluminal speeds forever.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Infinite Distance Problem</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> The distance to regions beyond the observable universe is effectively infinite due to continuous space-time expansion during any journey attempt.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Any probe launched would find its destination receding faster than it could travel, creating a cosmic treadmill effect with no possible solution.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Information Transfer Limits</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Even if probes could somehow reach beyond the observable universe, no information could ever return due to the same light-speed and expansion constraints.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Any data or signals from beyond the observable horizon would be permanently lost to us, making such missions scientifically meaningless.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Technological Impossibility</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> No conceivable technology can overcome the fundamental physics that create the observable universe boundary, regardless of future scientific advancement.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> This limitation is built into the structure of reality itself, making it an absolute barrier that defines the permanent limits of cosmic exploration.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% comment %} this is benefits section  {% endcomment %}
+
+<section class="impact-section">
+  <div class="impact-container">
+    <div class="section-header">
+      <h2 class="section-heading">IMPACT & BENEFITS TO HUMANITY</h2>
+      <p class="section-description">
+        Understanding the observable universe boundaries provides crucial insights that advance our scientific knowledge and shape humanity's cosmic perspective.
+      </p>
+    </div>
+
+    <div class="benefits-showcase">
+      <div class="showcase-container">
+        <div class="benefit-slide active">
+          <h3 class="benefit-title">SCIENTIFIC UNDERSTANDING ADVANCEMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Understanding observable universe limits helps scientists focus research on achievable cosmic exploration within our reachable boundaries.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This knowledge redirects resources toward productive research areas like exoplanet detection, deep space telescopy, and local galaxy cluster studies.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">TECHNOLOGICAL INNOVATION FOCUS</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Recognizing fundamental limits drives innovation in achievable technologies like advanced telescopes, space probes, and interstellar communication systems.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> Scientists develop better instruments for observing distant galaxies, improving our understanding of cosmic evolution and dark matter distribution.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">COSMIC PERSPECTIVE DEVELOPMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Understanding our cosmic limitations helps humanity develop humility and focus on protecting and exploring our reachable universe.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This perspective encourages sustainable space exploration, environmental protection, and appreciation for our unique position in the cosmos.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">EDUCATIONAL AND PHILOSOPHICAL VALUE</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Learning about observable universe boundaries teaches fundamental physics concepts and the scientific method to students and researchers.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This knowledge inspires new generations of scientists while providing philosophical insights about humanity's place in the infinite cosmos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-controls">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+      </div>
+    </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("benefit-slide");
+      let indicators = document.getElementsByClassName("indicator");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (let i = 0; i < indicators.length; i++) {
+        indicators[i].classList.remove("active");
+      }
+      
+      slides[slideIndex-1].classList.add("active");
+      indicators[slideIndex-1].classList.add("active");
+    }
+
+    // Auto advance slides
+    setInterval(() => {
+      changeSlide(1);
+    }, 6000);
+  </script>
+</section>
+
+
+{% comment %} this is faq {% endcomment %}
+
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="section-header">
+      <h2 class="section-heading">FREQUENTLY ASKED QUESTIONS</h2>
+      <p class="section-description">
+        Common questions about sending rovers or probes beyond the observable universe and the fundamental limitations of cosmic exploration.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What is the observable universe?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            The observable universe is the spherical region of the universe that we can observe from Earth. Its boundary is determined by how far light has traveled since the Big Bang approximately 13.8 billion years ago. This creates a horizon beyond which we cannot see or receive information, regardless of what technologies we develop.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Why can't we send probes beyond this boundary?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Current physics forbids faster-than-light travel, which would be required to reach regions beyond the observable universe. Additionally, cosmic expansion causes the most distant regions to recede from us faster than the speed of light. This means no probe, regardless of technology, could ever reach these areas because the destination moves away faster than anything can travel toward it.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Could future technology overcome these limitations?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            No future technology can overcome these fundamental limitations because they are built into the structure of space-time itself. The speed of light limit and cosmic expansion are not engineering challenges but fundamental properties of reality. Even theoretical concepts like wormholes or faster-than-light travel remain purely speculative and may violate causality.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">How large is the observable universe?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            The observable universe has a radius of approximately 46.5 billion light-years due to cosmic expansion. While light from the most distant visible objects has traveled for 13.8 billion years, those objects are now much farther away due to the expansion of space during the light's journey. The observable universe contains an estimated 2 trillion galaxies.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What exists beyond the observable universe?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            We cannot know what exists beyond the observable universe because no information from those regions can reach us. The universe beyond our horizon may be infinite and contain more galaxies, stars, and potentially other forms of matter. However, this remains forever unknowable to us due to the fundamental limitations of light speed and cosmic expansion.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are the scientific benefits of understanding these limits?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Understanding observable universe limitations helps scientists focus resources on achievable research within our cosmic horizon. This knowledge advances our understanding of cosmology, guides telescope development for observing distant galaxies, and provides crucial insights into the nature of space-time, dark energy, and the ultimate fate of the universe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentNode;
+      const answer = faqItem.querySelector('.faq-answer');
+      const icon = element.querySelector('.toggle-icon');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.toggle-icon').textContent = '+';
+        }
+      });
+      
+      // Toggle current FAQ
+      if (faqItem.classList.contains('active')) {
+        faqItem.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        faqItem.classList.add('active');
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</section>
+
+
+{% comment %} this is cta {% endcomment %}
+
+<section class="cta-section">
+  <div class="bg-overlay"></div>
+  <div class="bg-image" style="
+    background-image: url('https://images.pexels.com/photos/30596893/pexels-photo-30596893.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "></div>
+  
+  <div class="cta-container">
+    <div class="mission-header">
+      <h2 class="cta-heading">THIS IS NOT SCIENCE FICTION. IT'S FUNDAMENTAL PHYSICS.</h2>
+      <div class="header-divider">
+        <div class="divider-glow"></div>
+      </div>
+      <p class="cta-description">
+        Traveling beyond the known boundaries of the universe is well beyond human capability due to the universe's expansion faster than the speed of light and lack of physical "edges."
+      </p>
+    </div>
+
+    <div class="mission-call">
+      <div class="call-content">
+        <h3 class="call-title">UNDERSTAND THE LIMITS</h3>
+        <p class="call-text">
+          Current physics forbids faster-than-light travel, so reaching or exploring beyond the observable universe is deemed impossible. Join us in understanding these cosmic boundaries.
+        </p>
+        
+        <div class="cta-buttons">
+          <button class="primary-btn">
+            <span class="btn-text">EXPLORE SCIENCE</span>
+            <div class="btn-particles"></div>
+          </button>
+          <button class="secondary-btn">
+            <span class="btn-text">LEARN PHYSICS</span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-commitment">
+      <div class="commitment-border"></div>
+      <p class="commitment-text">
+        Understanding why we cannot send rovers or probes beyond the observable universe helps us appreciate the fundamental laws of physics and focus our exploration efforts within the reachable cosmos.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    // Swiper initialization
+    var swiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 5000 }
+    });
+  </script>
+  <script>
+  const targetDate = new Date("2527-12-31T00:00:00Z");
+
+  function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.querySelector(".countdown-grid").innerHTML = "<h2>Mission Launched!</h2>";
+      return;
+    }
+
+    const years = targetDate.getFullYear() - now.getFullYear();
+    const months = targetDate.getMonth() - now.getMonth();
+    const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24)) % 30;
+
+    document.getElementById("years").textContent = String(years).padStart(2, '0');
+    document.getElementById("months").textContent = String(months >= 0 ? months : months + 12).padStart(2, '0');
+    document.getElementById("days").textContent = String(days).padStart(3, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+{% endblock body %}

@@ -1,0 +1,726 @@
+{% extends "base.html" %}
+{% block title %}Quantum Tunnels{% endblock title %}
+
+{% block body %} 
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harnessing Black Holes or Wormholes for Travel | Space Research</title>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/dyson.css' %}">
+</head>
+
+
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+{% comment %} this is hero section {% endcomment %}
+
+
+
+  <section class="enhanced-hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1706211307284-889793e9fdc4?q=80&w=1309&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1732633553684-b18a43a48d3d?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1712510795953-e1bdded91734?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="hero-content-box">
+      <div class="hero-content text-center">
+        <h1>Harnessing Black Holes or Wormholes for Travel</h1>
+        <p>Exploring theoretical concepts for faster-than-light travel and energy extraction from cosmic phenomena.</p>
+        <a href="#learn-more" class="btn-cta">Learn More</a>
+      </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card bg-dark text-white border-light shadow-sm p-4">
+            <h2 class="mb-3 text-center">Harnessing Black Holes or Wormholes for Travel</h2>
+            <ul class="mb-0">
+              <li>Concepts like wormholes for faster-than-light travel or energy extraction from black holes are theoretical and confront unsolved physics problems and engineering hurdles.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  {% comment %} this is remaining time {% endcomment %}
+
+
+<section class="hero-countdown">
+  <div class="countdown-container">
+    <h1 class="hero-heading">MISSION LAUNCH IN</h1>
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <div class="number" id="years">00</div>
+        <div class="label">YEARS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="months">00</div>
+        <div class="label">MONTHS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="days">000</div>
+        <div class="label">DAYS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is third section {% endcomment %}
+
+<section class="dyson-section">
+  <h2 class="dyson-title">Harnessing Black Holes or Wormholes for Travel</h2>
+  <p class="dyson-subtitle">Exploring theoretical concepts for faster-than-light travel and energy extraction from cosmic phenomena.</p>
+
+
+  <div class="dyson-grid">
+    <div class="dyson-card">
+      <div class="dyson-icon">🕳️</div>
+      <h3 class="dyson-card-title">Wormhole Traversability</h3>
+      <p class="dyson-card-text">Theoretical wormholes require exotic matter with negative energy density to remain stable and traversable.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Unknown</span>
+          <span class="stat-label">Exotic Matter Existence</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Theoretical</span>
+          <span class="stat-label">Physics Foundation</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Spacetime Geometry</span>
+        <span class="feature-tag">Negative Energy</span>
+      </div>
+    </div>
+
+
+    <div class="dyson-card">
+      <div class="dyson-icon">⚫</div>
+      <h3 class="dyson-card-title">Black Hole Energy Extraction</h3>
+      <p class="dyson-card-text">Concepts like Penrose process and Hawking radiation harvesting face massive engineering and physics challenges.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Extreme</span>
+          <span class="stat-label">Gravitational Fields</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Unsolved</span>
+          <span class="stat-label">Engineering Problems</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Ergosphere Access</span>
+        <span class="feature-tag">Radiation Capture</span>
+      </div>
+    </div>
+
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🌀</div>
+      <h3 class="dyson-card-title">Faster-Than-Light Concepts</h3>
+      <p class="dyson-card-text">Alcubierre drive and similar spacetime manipulation concepts require physics beyond our current understanding.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Speculative</span>
+          <span class="stat-label">Physics Theories</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Impossible</span>
+          <span class="stat-label">Current Technology</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Spacetime Warping</span>
+        <span class="feature-tag">Causality Issues</span>
+      </div>
+    </div>
+
+
+    <div class="dyson-card">
+      <div class="dyson-icon">⚛️</div>
+      <h3 class="dyson-card-title">Quantum Limitations</h3>
+      <p class="dyson-card-text">Quantum mechanics and general relativity conflicts create fundamental barriers to practical implementation.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Unresolved</span>
+          <span class="stat-label">Physics Conflicts</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Centuries</span>
+          <span class="stat-label">Research Needed</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Quantum Gravity</span>
+        <span class="feature-tag">Theory Gaps</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is fourth section {% endcomment %}
+
+<section class="dyson-model-section">
+  <!-- Background Images -->
+  <div class="background-video">
+    <div class="video-bg" id="video-bg" style="
+      background-image: url('https://static.wikia.nocookie.net/alldimensions/images/0/02/Universe-expanding-acceleration-1.jpg/revision/latest?cb=20180818180210');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+    <!-- Fallback background -->
+    <div class="video-fallback" style="
+      background-image: url('https://images.unsplash.com/photo-1689258994007-b09228c76cba?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+  </div>
+
+
+  <!-- Overlay Content -->
+  <div class="video-overlay">
+    <!-- Top Content Overlay -->
+    <div class="overlay-content">
+      <div class="intro-badge">
+        <span class="badge-icon">🕳️</span>
+        <span class="badge-text">Harnessing Black Holes or Wormholes for Travel</span>
+      </div>
+      
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-icon">⚫</div>
+          <span class="stat-number">Theoretical</span>
+          <span class="stat-label">Physics Foundation</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚛️</div>
+          <span class="stat-number">Unresolved</span>
+          <span class="stat-label">Physics Conflicts</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🔬</div>
+          <span class="stat-number">Centuries</span>
+          <span class="stat-label">Research Needed</span>
+        </div>
+      </div>
+
+
+      <div class="main-content">
+        <h2 class="dyson-heading">Black Hole & Wormhole Travel</h2>
+        <p class="dyson-subheading">
+          Concepts like wormholes for faster-than-light travel or energy extraction from black holes are theoretical and confront unsolved physics problems and engineering hurdles.
+        </p>
+      </div>
+
+
+      <div class="construction-phases">
+        <div class="phase-item">
+          <span class="phase-number">01</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Exotic Matter Requirements</h4>
+            <p class="phase-desc">Negative energy density needed</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">02</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Spacetime Manipulation</h4>
+            <p class="phase-desc">Beyond current understanding</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">03</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Engineering Impossibility</h4>
+            <p class="phase-desc">Massive technical barriers</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tech-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon">🕳️</div>
+          <span class="highlight-text">Wormhole Stability</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">⚫</div>
+          <span class="highlight-text">Black Hole Energy</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🌀</div>
+          <span class="highlight-text">Alcubierre Drive</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">⚛️</div>
+          <span class="highlight-text">Quantum Barriers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is technology challenges {% endcomment %}
+
+<section class="challenges-section">
+  <div class="challenges-container">
+    <div class="section-header">
+      <h2 class="section-heading">BLACK HOLE & WORMHOLE TRAVEL CHALLENGES + IMPOSSIBILITIES</h2>
+      <p class="section-description">
+        Theoretical faster-than-light travel concepts face unsolved physics and engineering challenges. These fundamental limitations reveal the boundaries between science fiction and scientific reality.
+      </p>
+    </div>
+
+
+    <div class="challenges-content">
+      <div class="challenge-item">
+        <h3 class="challenge-title">Exotic Matter Requirements</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Wormholes require exotic matter with negative energy density to remain stable and traversable—a type of matter that may not exist in our universe.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> No known physics allows for the creation or control of exotic matter with negative energy density, making stable wormholes purely theoretical constructs without practical foundation.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Spacetime Manipulation Impossibility</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Concepts like the Alcubierre drive require manipulating spacetime geometry itself, demanding energy levels equivalent to stellar masses or entire civilizations.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Creating spacetime warps would require mass-energy equivalent to planets or stars, far beyond any conceivable technology or energy generation capability.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Black Hole Engineering Barriers</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Extracting energy from black holes through Penrose processes or Hawking radiation faces extreme gravitational fields and microscopic energy outputs.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Approaching black holes close enough for energy extraction would destroy any spacecraft, while Hawking radiation from stellar black holes is virtually undetectable and unusable.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Quantum Gravity Conflicts</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> These concepts require unifying quantum mechanics and general relativity—a fundamental physics problem that remains completely unsolved after decades of research.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Without a theory of quantum gravity, we cannot understand how spacetime behaves at the scales necessary for wormhole physics or black hole manipulation.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Causality Paradox Problems</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Faster-than-light travel through wormholes could create closed timelike curves, allowing time travel and causality violations that break fundamental physics principles.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> The universe appears to have chronology protection mechanisms that prevent paradoxes, likely making traversable wormholes physically impossible regardless of engineering advances.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Theoretical Foundation Gaps</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> These concepts exist only in speculative physics papers with mathematical models that have no experimental validation or practical testing methodology.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Unlike other theoretical physics that led to practical applications, wormhole and black hole travel concepts have no clear path from theory to experiment to engineering implementation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is impact {% endcomment %}
+
+<section class="impact-section">
+  <div class="impact-container">
+    <div class="section-header">
+      <h2 class="section-heading">IMPACT & BENEFITS TO HUMANITY</h2>
+      <p class="section-description">
+        Understanding the theoretical nature of black hole and wormhole travel drives fundamental physics research and helps focus humanity's exploration efforts on scientifically achievable frontiers.
+      </p>
+    </div>
+
+
+    <div class="benefits-showcase">
+      <div class="showcase-container">
+        <div class="benefit-slide active">
+          <h3 class="benefit-title">FUNDAMENTAL PHYSICS ADVANCEMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Researching black hole and wormhole physics challenges drives breakthrough discoveries in quantum gravity, spacetime geometry, and exotic matter physics.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> These theoretical advances revolutionize our understanding of the universe and may lead to unexpected technological applications in energy and propulsion systems.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">SCIENTIFIC BOUNDARY RECOGNITION</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Understanding the limitations of faster-than-light travel concepts provides crucial perspective on the boundaries between theoretical physics and practical engineering.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This knowledge helps scientists distinguish between scientifically plausible goals and science fiction, enabling more effective research prioritization and resource allocation.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">ALTERNATIVE TECHNOLOGY DEVELOPMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Recognizing the impossibility of current wormhole and black hole travel concepts redirects research toward achievable advanced propulsion and energy technologies.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This realistic assessment enables focus on fusion propulsion, antimatter research, and other technologies that could enable practical interstellar exploration within our galaxy.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">THEORETICAL FRAMEWORK ESTABLISHMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Studying these theoretical concepts establishes rigorous frameworks for evaluating future breakthrough physics discoveries and their practical applications.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This foundation ensures that when new physics emerges, we can quickly assess its potential for revolutionary technologies while avoiding unrealistic expectations and resource waste.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="navigation-controls">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+      </div>
+    </div>
+
+
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("benefit-slide");
+      let indicators = document.getElementsByClassName("indicator");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (let i = 0; i < indicators.length; i++) {
+        indicators[i].classList.remove("active");
+      }
+      
+      slides[slideIndex-1].classList.add("active");
+      indicators[slideIndex-1].classList.add("active");
+    }
+
+
+    // Auto advance slides
+    setInterval(() => {
+      changeSlide(1);
+    }, 6000);
+  </script>
+</section>
+
+{% comment %} this is faq {% endcomment %}
+
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="section-header">
+      <h2 class="section-heading">FREQUENTLY ASKED QUESTIONS</h2>
+      <p class="section-description">
+        Common questions about harnessing black holes and wormholes for travel and the theoretical physics challenges of faster-than-light travel concepts.
+      </p>
+    </div>
+
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What is black hole and wormhole travel?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Black hole and wormhole travel refers to theoretical concepts for faster-than-light travel or energy extraction from cosmic phenomena. These concepts include traversable wormholes for instantaneous travel between distant locations and extracting energy from black holes through advanced physics processes.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Why are these travel concepts currently impossible?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            These concepts confront unsolved physics problems and engineering hurdles. Wormholes require exotic matter with negative energy density that may not exist, while black hole energy extraction faces extreme gravitational fields and massive engineering challenges beyond any conceivable technology.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What is exotic matter and why is it needed?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Exotic matter is a theoretical substance with negative energy density required to keep wormholes stable and traversable. No known physics allows for the creation or control of such matter, making stable wormholes purely theoretical constructs without practical foundation in our universe.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What about the Alcubierre drive concept?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            The Alcubierre drive concept requires manipulating spacetime geometry itself, demanding energy levels equivalent to stellar masses or entire civilizations. Creating such spacetime warps would require mass-energy equivalent to planets or stars, far beyond any conceivable technology or energy generation capability.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Could we extract energy from black holes?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Black hole energy extraction through Penrose processes or Hawking radiation faces extreme engineering barriers. Approaching black holes close enough for energy extraction would destroy any spacecraft, while Hawking radiation from stellar black holes is virtually undetectable and unusable for practical purposes.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are the benefits of studying these theoretical concepts?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Studying these concepts drives fundamental physics advancement in quantum gravity and spacetime geometry, helps establish scientific boundaries between theory and engineering, and redirects research toward achievable advanced propulsion technologies. This research builds frameworks for evaluating future breakthrough physics discoveries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentNode;
+      const answer = faqItem.querySelector('.faq-answer');
+      const icon = element.querySelector('.toggle-icon');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.toggle-icon').textContent = '+';
+        }
+      });
+      
+      // Toggle current FAQ
+      if (faqItem.classList.contains('active')) {
+        faqItem.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        faqItem.classList.add('active');
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</section>
+
+{% comment %} this is cta  {% endcomment %}
+
+<section class="cta-section">
+  <div class="bg-overlay"></div>
+  <div class="bg-image" style="
+    background-image: url('https://images.unsplash.com/photo-1741997852945-ab3ba9cf1f62?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "></div>
+  
+  <div class="cta-container">
+    <div class="mission-header">
+      <h2 class="cta-heading">THIS IS NOT SCIENCE FICTION. IT'S THEORETICAL PHYSICS.</h2>
+      <div class="header-divider">
+        <div class="divider-glow"></div>
+      </div>
+      <p class="cta-description">
+        Concepts like wormholes for faster-than-light travel or energy extraction from black holes are theoretical and confront unsolved physics problems and engineering hurdles.
+      </p>
+    </div>
+
+
+    <div class="mission-call">
+      <div class="call-content">
+        <h3 class="call-title">UNDERSTAND THE PHYSICS</h3>
+        <p class="call-text">
+          Wormholes require exotic matter with negative energy density that may not exist, while black hole energy extraction faces extreme gravitational barriers. Join us in exploring these theoretical boundaries and advancing fundamental physics.
+        </p>
+        
+        <div class="cta-buttons">
+          <button class="primary-btn">
+            <span class="btn-text">EXPLORE CONCEPTS</span>
+            <div class="btn-particles"></div>
+          </button>
+          <button class="secondary-btn">
+            <span class="btn-text">SUPPORT RESEARCH</span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mission-commitment">
+      <div class="commitment-border"></div>
+      <p class="commitment-text">
+        Understanding the limitations of black hole and wormhole travel concepts drives fundamental physics advancement and helps focus humanity's exploration efforts on scientifically achievable frontiers through realistic propulsion technologies.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <script>
+  const targetDate = new Date("9996-12-31T00:00:00Z");
+
+  function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.querySelector(".countdown-grid").innerHTML = "<h2>Mission Launched!</h2>";
+      return;
+    }
+
+    const years = targetDate.getFullYear() - now.getFullYear();
+    const months = targetDate.getMonth() - now.getMonth();
+    const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24)) % 30;
+
+    document.getElementById("years").textContent = String(years).padStart(2, '0');
+    document.getElementById("months").textContent = String(months >= 0 ? months : months + 12).padStart(2, '0');
+    document.getElementById("days").textContent = String(days).padStart(3, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    // Swiper initialization
+    var swiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 5000 }
+    });
+  </script>
+</body>
+</html>
+
+{% endblock body %}

@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+{% block title %}Blog{% endblock title %}
+
+{% block body %} 
+{% load static %}
+{% comment %} this is coursels {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intergalactic Space Missions | Space Research</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container-fluid py-5" style="background-color: #000000ff; color: white;">
+  <div class="container text-center">
+    
+    <!-- 🌌 Heading and Description -->
+    <h2 class="mb-3">Explore the Universe</h2>
+    <p class="mb-5 text-light">
+      Dive into fascinating celestial wonders — from distant galaxies and black holes to the moon’s surface and life aboard space stations.
+    </p>
+
+    <!-- 🌠 Row 1 -->
+    <div class="row justify-content-center g-4 mb-4">
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #1b1b1bff;">
+          <img src="https://images.unsplash.com/photo-1653089116335-137ea51598a9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA3fHxzcGFjZXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" style="height: 160px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Stars & Galaxies</h6>
+            <p class="card-text small">Dazzling formations light-years away that shape the cosmos.</p>
+            <button class="btn btn-light btn-sm">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #1b1b1bff;">
+          <img src="https://images.unsplash.com/photo-1571769267292-e24dfadebbdc?q=80&w=1190&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" style="height: 160px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">The Milky Way</h6>
+            <p class="card-text small">Our home galaxy, a spiraling system of stars and mystery.</p>
+            <button class="btn btn-light btn-sm">Discover</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #1b1b1bff;">
+          <img src="https://images.unsplash.com/photo-1614315517650-3771cf72d18a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" style="height: 160px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Astronaut Life</h6>
+            <p class="card-text small">Life in orbit: floating, fixing, and facing the unknown.</p>
+            <button class="btn btn-light btn-sm">Read More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🌠 Row 2 -->
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #1b1b1bff;">
+          <img src="https://images.unsplash.com/photo-1517866184231-7ef94c2ea930?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fHNwYWNlfGVufDB8fDB8fHww" class="card-img-top" style="height: 160px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Moon Surface</h6>
+            <p class="card-text small">The silent and cratered face of our lunar neighbor.</p>
+            <button class="btn btn-light btn-sm">Explore</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #1b1b1bff;">
+          <img src="https://images.unsplash.com/photo-1447433865958-f402f562b843?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" style="height: 160px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Black Holes</h6>
+            <p class="card-text small">Where gravity reigns and time may stand still.</p>
+            <button class="btn btn-light btn-sm">See More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-white" style="background-color: #1b1b1bff;">
+          <img src="https://images.unsplash.com/photo-1484950763426-56b5bf172dbb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" style="height: 160px; object-fit: cover;" alt="...">
+          <div class="card-body">
+            <h6 class="card-title">Space Stations</h6>
+            <p class="card-text small">Orbiting labs where science and humanity meet.</p>
+            <button class="btn btn-light btn-sm">View</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% comment %} this is Visionary Space Topics {% endcomment %}
+
+
+<section class="visionary-topics-section py-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8">
+        <div class="topics-card">
+          <div class="card-header text-center mb-4">
+            <h2 class="section-title mb-3">Visionary Space Topics</h2>
+            <p class="section-subtitle">Explore the future of space exploration through bold, future-forward concepts that push the boundaries of human imagination and scientific possibility.</p>
+          </div>
+          
+          <div class="topics-list">
+            <div class="topic-item">
+              <div class="topic-number">01</div>
+              <div class="topic-content">
+                <a href="#" class="topic-link">
+                  <h4 class="topic-title">The Road to Building a Dyson Sphere: Science or Speculation?</h4>
+                  <p class="topic-excerpt">Exploring the theoretical megastructure that could harness a star's entire energy output</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="topic-item">
+              <div class="topic-number">02</div>
+              <div class="topic-content">
+                <a href="#" class="topic-link">
+                  <h4 class="topic-title">Why Humanity Must Think Beyond the Solar System</h4>
+                  <p class="topic-excerpt">The imperative for interstellar exploration and our cosmic destiny</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="topic-item">
+              <div class="topic-number">03</div>
+              <div class="topic-content">
+                <a href="#" class="topic-link">
+                  <h4 class="topic-title">How AI Rovers Will Revolutionize Intergalactic Exploration</h4>
+                  <p class="topic-excerpt">Autonomous intelligence as the key to exploring distant galaxies</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="topic-item">
+              <div class="topic-number">04</div>
+              <div class="topic-content">
+                <a href="#" class="topic-link">
+                  <h4 class="topic-title">Terraforming Mars vs. Building Space Habitats: What's the Future?</h4>
+                  <p class="topic-excerpt">Comparing planetary transformation with orbital civilization concepts</p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="topic-item">
+              <div class="topic-number">05</div>
+              <div class="topic-content">
+                <a href="#" class="topic-link">
+                  <h4 class="topic-title">Can We Harness Wormholes for Travel? Breaking Physics as We Know It</h4>
+                  <p class="topic-excerpt">Theoretical physics meets speculative engineering in faster-than-light travel</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="topics-footer text-center mt-4">
+            <a href="#" class="btn btn-explore">Explore All Topics</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is technical deep daves {% endcomment %}
+
+
+
+
+</body>
+</html>
+
+{% endblock body %}

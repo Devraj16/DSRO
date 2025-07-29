@@ -1,0 +1,303 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {% block title %} {% endblock title %} | DSRO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/navfoot.css' %}">
+  <style>
+    .dsro-footer {
+  position: relative;
+  background-color: #000;
+  color: #aaa;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  padding: 80px 40px 40px;
+}
+
+.footer-galaxy-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+  background-image: url('https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg ');
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.footer-container {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-logo-blurb img {
+  width: 50px;
+  filter: brightness(120%);
+}
+
+.footer-logo-blurb h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+.footer-logo-blurb p {
+  max-width: 280px;
+  color: #bbb;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+.cta-glow {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+.cta-glow:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+.footer-column h4 {
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+}
+
+.footer-bottom hr {
+  border: 0;
+  border-top: 1px solid #333;
+  margin-bottom: 16px;
+}
+.footer-logo-blurb img {
+  width: 110px;
+  height: auto;
+ 
+}
+
+
+</style>
+<body>
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark position-sticky top-0 z-3 py-3">
+
+
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Left side: Search + Dropdown -->
+    <div class="d-flex align-items-center">
+      <!-- Search form -->
+      <form class="d-flex me-3" role="search">
+        <input class="form-control form-control-sm me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light btn-sm search-icon-btn" type="submit">
+          <i class="bi bi-search"></i>
+        </button>
+      </form>
+
+      <!-- Our Mission Dropdown -->
+      <div class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-white" id="ourMissionDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Our Mission
+  </a>
+  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="ourMissionDropdown">
+    <li><a class="dropdown-item" href="{% url 'dyson' %}">Dyson Sphere</a></li>
+    <li><a class="dropdown-item" href="{% url 'voidwalker' %}">Mission Voidwalker</a></li>
+    <li><a class="dropdown-item" href="{% url 'kepler' %}">Kepler Odyssey</a></li>
+    <li><a class="dropdown-item" href="{% url 'intergalactic' %}">Intergalactic Quest</a></li>
+    <li><a class="dropdown-item" href="{% url 'quantum' %}">Quantum Tunnels</a></li>
+    <li><a class="dropdown-item" href="{% url 'terraforming' %}">Planetary Terraforming</a></li>
+  </ul>
+</div>
+
+</div>
+
+    <!-- Center Logo -->
+     {% comment %} <div class="me-auto" style="width: px;"></div>
+    <a class="navbar-brand mx-auto" href="{% url 'home' %}">
+      <img src="{% static 'home/DSROlogo.png' %}" alt="Logo" style="height: 45px;">
+    </a> {% endcomment %}
+    <a class="navbar-brand position-absolute top-50 start-50 translate-middle" href="{% url 'home' %}">
+    <img src="{% static 'home/DSROlogo.png' %}" alt="Logo" style="height: 45px;">
+    </a>
+
+
+    <!-- Right side: Navigation links -->
+    <ul class="navbar-nav ms-auto d-flex align-items-center">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+      </li>
+      <li class="nav-item">
+        {% if user.is_authenticated %}
+          <a class="nav-link fw-bold text-danger" href="{% url 'logout' %}">Logout</a>
+        {% else %}
+          <a class="nav-link fw-bold text-success" href="{% url 'login' %}">Login</a>
+        {% endif %}
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+{% comment %} this is alret {% endcomment %}
+
+{% if messages %}
+
+  {% for message in messages %}
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show mb-1" role="alert" style="margin-bottom: 0 !important;">
+      {{ message }}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endfor %}
+{% endif %}
+
+
+
+{% block body %}{% endblock body %}
+
+{% comment %} this is footer {% endcomment %}
+
+<footer class="dsro-footer">
+  <div class="footer-galaxy-bg"></div>
+  
+  <div class="footer-container">
+    <div class="footer-grid">
+
+      <div class="footer-logo-blurb">
+        <img src="static/home/DSROlogo.png" alt="DSRO Logo">
+        <h2>DSRO</h2>
+        <p>Advancing humanity beyond the stars. Building megastructures. Dreaming across galaxies.</p>
+        <a href="{% url 'contact' %}" class="cta-glow">Join the Journey</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="{% url 'dyson' %}">Dyson Missions</a></li>
+          <li><a href="{% url 'intergalactic' %}">Exoplanet Travel</a></li>
+          <li><a href="{% url 'quantum' %}">Dark Energy Projects</a></li>
+          <li><a href="{% url 'voidwalker' %}">AI Rovers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Initiatives</h4>
+        <ul>
+          <li><a href="{% url 'quantum' %}">Wormhole Research</a></li>
+          <li><a href="{% url 'quantum' %}">Black Hole Harnessing</a></li>
+          <li><a href="{% url 'kepler' %}">Space Habitats</a></li>
+          <li><a href="dyson">Astrobiology</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">X (Twitter)</a></li>
+          <li><a href="#">Galactic Newsletter</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <hr />
+      <p>&copy; 2025 Devraj’s Space Research Org. | Pushing humanity to the outer edge of time.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const navbar = document.getElementById("navbar");
+
+    function updateNavbar() {
+      if (window.scrollY > 40) {
+        navbar.classList.add("navbar-scrolled");
+        navbar.classList.remove("navbar-top");
+      } else {
+        navbar.classList.add("navbar-top");
+        navbar.classList.remove("navbar-scrolled");
+      }
+    }
+
+    // Initial check
+    updateNavbar();
+
+    // Listen to scroll
+    window.addEventListener("scroll", updateNavbar);
+  });
+</script>
+
+
+  </body>
+</html> 

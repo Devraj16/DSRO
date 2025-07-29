@@ -1,0 +1,680 @@
+{% extends "base.html" %}
+{% block title %}Kepler Odyssey{% endblock title %}
+
+{% block body %} 
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crewed Missions to Kepler Exoplanets | Space Research</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/dyson.css' %}">
+</head>
+
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <section class="enhanced-hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/30596259/pexels-photo-30596259.jpeg');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/30596306/pexels-photo-30596306.png');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.pexels.com/photos/21337322/pexels-photo-21337322.jpeg');"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content-box">
+      <div class="hero-content text-center">
+        <h1>Crewed Missions to Kepler Exoplanets</h1>
+        <p>Exploring the challenges and impossibilities of manned missions to potentially habitable worlds like Kepler-22b.</p>
+        <a href="#learn-more" class="btn-cta">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card bg-dark text-white border-light shadow-sm p-4">
+            <h2 class="mb-3 text-center">Crewed Missions to Kepler Exoplanets (e.g., Kepler-22b)</h2>
+            <ul class="mb-0">
+              <li>Some potentially habitable exoplanets like those in the Kepler system lie tens to hundreds of light years away.</li>
+              <li>A manned mission would require travel at a significant fraction of light speed or generation ships lasting multiple human lifetimes, which is far beyond current propulsion and life-support technologies.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+{% comment %} this is remaining time {% endcomment %}
+
+<section class="hero-countdown">
+  <div class="countdown-container">
+    <h1 class="hero-heading">MISSION LAUNCH IN</h1>
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <div class="number" id="years">00</div>
+        <div class="label">YEARS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="months">00</div>
+        <div class="label">MONTHS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="days">000</div>
+        <div class="label">DAYS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is third section {% endcomment %}
+
+<section class="dyson-section">
+  <h2 class="dyson-title">Kepler Exoplanet Missions</h2>
+  <p class="dyson-subtitle">Exploring the challenges of manned missions to distant worlds.</p>
+
+  <div class="dyson-grid">
+    <div class="dyson-card">
+      <div class="dyson-icon">🪐</div>
+      <h3 class="dyson-card-title">Kepler-22b Distance</h3>
+      <p class="dyson-card-text">Potentially habitable exoplanets like Kepler-22b lie tens to hundreds of light years away from Earth.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">600</span>
+          <span class="stat-label">Light-Years Away</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">2.4x</span>
+          <span class="stat-label">Earth's Radius</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Habitable Zone</span>
+        <span class="feature-tag">Super-Earth</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">⚡</div>
+      <h3 class="dyson-card-title">Propulsion Requirements</h3>
+      <p class="dyson-card-text">Crewed missions would require travel at significant fractions of light speed beyond current capabilities.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">10-20%</span>
+          <span class="stat-label">Light Speed Needed</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">0%</span>
+          <span class="stat-label">Current Capability</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Fusion Propulsion</span>
+        <span class="feature-tag">Antimatter Engines</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🏗️</div>
+      <h3 class="dyson-card-title">Generation Ships</h3>
+      <p class="dyson-card-text">Alternative approach using multi-generational vessels lasting multiple human lifetimes for the journey.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">3000+</span>
+          <span class="stat-label">Year Journey</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Generations</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Closed Ecosystem</span>
+        <span class="feature-tag">Multi-Generation</span>
+      </div>
+    </div>
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🔬</div>
+      <h3 class="dyson-card-title">Life Support Challenges</h3>
+      <p class="dyson-card-text">Mission requirements far exceed current life-support and propulsion technologies.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Decades</span>
+          <span class="stat-label">Technology Gap</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Extreme</span>
+          <span class="stat-label">Complexity</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Advanced Tech</span>
+        <span class="feature-tag">Beyond Current</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is fourth section {% endcomment %}
+
+<section class="dyson-model-section">
+  <!-- Background Images -->
+  <div class="background-video">
+    <div class="video-bg" id="video-bg" style="
+      background-image: url('https://static.wikia.nocookie.net/alldimensions/images/0/02/Universe-expanding-acceleration-1.jpg/revision/latest?cb=20180818180210');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+    <!-- Fallback background -->
+    <div class="video-fallback" style="
+      background-image: url('https://images.pexels.com/photos/30596229/pexels-photo-30596229.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+  </div>
+
+  <!-- Overlay Content -->
+  <div class="video-overlay">
+    <!-- Top Content Overlay -->
+    <div class="overlay-content">
+      <div class="intro-badge">
+        <span class="badge-icon">🪐</span>
+        <span class="badge-text">Kepler Exoplanet Missions</span>
+      </div>
+      
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-icon">📏</div>
+          <span class="stat-number">600</span>
+          <span class="stat-label">Light-Years Away</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <span class="stat-number">3000+</span>
+          <span class="stat-label">Year Journey</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🚀</div>
+          <span class="stat-number">10-20%</span>
+          <span class="stat-label">Light Speed Needed</span>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <h2 class="dyson-heading">Kepler Crewed Missions</h2>
+        <p class="dyson-subheading">
+          Potentially habitable Kepler exoplanets lie dozens to hundreds of light-years away, requiring multi-generational ships to reach them.
+        </p>
+      </div>
+
+      <div class="construction-phases">
+        <div class="phase-item">
+          <span class="phase-number">01</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Distance Challenge</h4>
+            <p class="phase-desc">Hundreds of light-years away</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">02</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Propulsion Limits</h4>
+            <p class="phase-desc">Need fraction of light speed</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">03</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Generation Ships</h4>
+            <p class="phase-desc">Multi-lifetime voyages required</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon">⚡</div>
+          <span class="highlight-text">Fusion Propulsion</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🏗️</div>
+          <span class="highlight-text">Generation Ships</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🔬</div>
+          <span class="highlight-text">Life Support</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🪐</div>
+          <span class="highlight-text">Kepler-22b</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is challenges {% endcomment %}
+
+<section class="challenges-section">
+  <div class="challenges-container">
+    <div class="section-header">
+      <h2 class="section-heading">KEPLER EXOPLANET MISSION CHALLENGES + SOLUTIONS</h2>
+      <p class="section-description">
+        Crewed missions to Kepler exoplanets face unprecedented technological barriers that push the limits of human engineering. These challenges require revolutionary breakthroughs in propulsion and life support systems.
+      </p>
+    </div>
+
+    <div class="challenges-content">
+      <div class="challenge-item">
+        <h3 class="challenge-title">Extreme Distance Barriers</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Some potentially habitable exoplanets like those in the Kepler system lie tens to hundreds of light years away, creating unprecedented distance challenges for human travel.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Advanced fusion propulsion systems and breakthrough antimatter engines could theoretically achieve 10-20% of light speed, though these technologies remain decades beyond current capabilities.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Propulsion Technology Limitations</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> A manned mission would require travel at a significant fraction of light speed, far beyond current propulsion and energy generation technologies.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Developing fusion ramjets, Bussard collectors, and theoretical breakthrough propulsion systems could enable sustained high-velocity travel over interstellar distances.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Multi-Generational Journey Requirements</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Even with advanced propulsion, missions to Kepler exoplanets would require generation ships lasting multiple human lifetimes spanning centuries or millennia.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Self-sustaining generation ships with closed-loop ecosystems, advanced life support systems, and multi-generational social structures could sustain human populations during ultra-long voyages.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Life Support System Complexity</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Maintaining viable life support systems for thousands of years while supporting entire human populations requires technologies far beyond current capabilities.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Advanced closed-loop ecological systems, molecular recycling technology, and artificial gravity generation could create sustainable habitats for multi-generational space travel.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Psychological and Social Challenges</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Maintaining psychological health and social cohesion across multiple generations confined in spacecraft presents unprecedented human factors challenges.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Advanced virtual reality environments, carefully designed social structures, and genetic diversity maintenance programs could preserve human psychological and social well-being during extended voyages.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Communication and Navigation</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Maintaining communication with Earth and precise navigation across hundreds of light-years requires breakthrough communication and positioning technologies.
+        </p>
+        <p class="solution-text">
+          <strong>Solution:</strong> Quantum communication networks, advanced AI navigation systems, and autonomous decision-making capabilities could enable independent operation across interstellar distances.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is benefits section  {% endcomment %}
+
+<section class="impact-section">
+  <div class="impact-container">
+    <div class="section-header">
+      <h2 class="section-heading">IMPACT & BENEFITS TO HUMANITY</h2>
+      <p class="section-description">
+        Pursuing crewed missions to Kepler exoplanets drives revolutionary technological advancement and expands humanity's understanding of our place in the universe.
+      </p>
+    </div>
+
+    <div class="benefits-showcase">
+      <div class="showcase-container">
+        <div class="benefit-slide active">
+          <h3 class="benefit-title">REVOLUTIONARY PROPULSION DEVELOPMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Developing propulsion systems for Kepler missions drives breakthrough technologies in fusion engines, antimatter propulsion, and advanced space travel.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> These propulsion advances revolutionize solar system exploration, asteroid mining, and interplanetary colonization capabilities for all of humanity.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">ADVANCED LIFE SUPPORT SYSTEMS</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Creating generation ships for multi-lifetime voyages requires revolutionary closed-loop ecosystems and sustainable life support technologies.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> These technologies solve Earth's environmental challenges, enable permanent space colonies, and create sustainable living systems for growing populations.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">INTERSTELLAR COMMUNICATION BREAKTHROUGHS</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Maintaining contact across hundreds of light-years drives development of quantum communication networks and advanced signal processing.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> These communication advances enable instant global connectivity, secure quantum internet, and breakthrough scientific collaboration worldwide.
+            </p>
+          </div>
+        </div>
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">HUMAN SURVIVAL ASSURANCE</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Successfully reaching potentially habitable exoplanets like Kepler-22b provides humanity with backup worlds and species survival insurance.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> Multi-planetary civilization ensures human survival against existential threats while expanding our understanding of life's potential throughout the galaxy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="navigation-controls">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+      </div>
+    </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("benefit-slide");
+      let indicators = document.getElementsByClassName("indicator");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (let i = 0; i < indicators.length; i++) {
+        indicators[i].classList.remove("active");
+      }
+      
+      slides[slideIndex-1].classList.add("active");
+      indicators[slideIndex-1].classList.add("active");
+    }
+
+    // Auto advance slides
+    setInterval(() => {
+      changeSlide(1);
+    }, 6000);
+  </script>
+</section>
+
+{% comment %} this is faq {% endcomment %}
+
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="section-header">
+      <h2 class="section-heading">FREQUENTLY ASKED QUESTIONS</h2>
+      <p class="section-description">
+        Common questions about crewed missions to Kepler exoplanets and the technological challenges of interstellar human travel.
+      </p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are Kepler exoplanets?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Kepler exoplanets are planets discovered by NASA's Kepler Space Telescope that orbit stars outside our solar system. Some potentially habitable exoplanets like those in the Kepler system, including Kepler-22b, lie tens to hundreds of light years away from Earth and may have conditions suitable for human life.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Why are crewed missions to Kepler exoplanets so challenging?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            A manned mission would require travel at a significant fraction of light speed or generation ships lasting multiple human lifetimes, which is far beyond current propulsion and life-support technologies. The extreme distances of hundreds of light-years make these missions extraordinarily complex and lengthy.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are generation ships?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Generation ships are theoretical spacecraft designed to support human populations for thousands of years during interstellar voyages. These self-sustaining vessels would house multiple generations of humans, with advanced life support systems, closed-loop ecosystems, and the infrastructure needed to maintain civilization during multi-millennium journeys to distant exoplanets.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">How long would a mission to Kepler-22b take?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Kepler-22b is approximately 600 light-years away. Even with advanced propulsion systems achieving 10-20% of light speed, the journey would take 3,000-6,000 years. With current technology, such a mission would require over 100 generations of humans to complete, making it one of the most challenging endeavors ever conceived.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What propulsion technologies would be needed?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Missions to Kepler exoplanets would require revolutionary propulsion systems such as fusion ramjets, antimatter engines, or Bussard collectors. These theoretical technologies could potentially achieve significant fractions of light speed, but they remain decades beyond our current engineering capabilities and would require breakthrough advances in physics and materials science.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are the benefits of pursuing Kepler exoplanet missions?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Developing technologies for Kepler missions would drive revolutionary advances in propulsion, life support systems, closed-loop ecosystems, and interstellar communication. These breakthroughs would benefit all of humanity through improved space exploration capabilities, sustainable living technologies, and the ultimate goal of ensuring human survival across multiple worlds.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentNode;
+      const answer = faqItem.querySelector('.faq-answer');
+      const icon = element.querySelector('.toggle-icon');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.toggle-icon').textContent = '+';
+        }
+      });
+      
+      // Toggle current FAQ
+      if (faqItem.classList.contains('active')) {
+        faqItem.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        faqItem.classList.add('active');
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</section>
+
+{% comment %} this is cta  {% endcomment %}
+
+<section class="cta-section">
+  <div class="bg-overlay"></div>
+  <div class="bg-image" style="
+    background-image: url('https://images.pexels.com/photos/26937592/pexels-photo-26937592.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "></div>
+  
+  <div class="cta-container">
+    <div class="mission-header">
+      <h2 class="cta-heading">THIS IS NOT SCIENCE FICTION. IT'S THE FUTURE OF HUMANITY.</h2>
+      <div class="header-divider">
+        <div class="divider-glow"></div>
+      </div>
+      <p class="cta-description">
+        Some potentially habitable exoplanets like those in the Kepler system lie tens to hundreds of light years away, requiring revolutionary advances in human space exploration technology.
+      </p>
+    </div>
+
+    <div class="mission-call">
+      <div class="call-content">
+        <h3 class="call-title">JOIN THE MISSION</h3>
+        <p class="call-text">
+          A manned mission would require travel at a significant fraction of light speed or generation ships lasting multiple human lifetimes. Help us develop the technologies needed for humanity's greatest journey.
+        </p>
+        
+        <div class="cta-buttons">
+          <button class="primary-btn">
+            <span class="btn-text">EXPLORE KEPLER</span>
+            <div class="btn-particles"></div>
+          </button>
+          <button class="secondary-btn">
+            <span class="btn-text">SUPPORT RESEARCH</span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="mission-commitment">
+      <div class="commitment-border"></div>
+      <p class="commitment-text">
+        Developing technologies for crewed missions to Kepler exoplanets will revolutionize propulsion systems, life support technologies, and ensure humanity's survival across multiple worlds in our galaxy.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    // Swiper initialization
+    var swiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 5000 }
+    });
+  </script>
+  <script>
+  const targetDate = new Date("2927-12-31T00:00:00Z");
+
+  function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.querySelector(".countdown-grid").innerHTML = "<h2>Mission Launched!</h2>";
+      return;
+    }
+
+    const years = targetDate.getFullYear() - now.getFullYear();
+    const months = targetDate.getMonth() - now.getMonth();
+    const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24)) % 30;
+
+    document.getElementById("years").textContent = String(years).padStart(2, '0');
+    document.getElementById("months").textContent = String(months >= 0 ? months : months + 12).padStart(2, '0');
+    document.getElementById("days").textContent = String(days).padStart(3, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+
+
+{% endblock body %}

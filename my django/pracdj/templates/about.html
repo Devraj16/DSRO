@@ -1,0 +1,518 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock title %}
+
+{% block body %} 
+
+{% comment %} this is the hero section {% endcomment %}
+
+<!-- Bootstrap & Google Fonts -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    {% comment %} font-family: 'Montserrat', sans-serif; {% endcomment %}
+    margin: -50px 0; /* Reset margin to avoid body overflow */
+    background-color: #000; /* Set a dark background for the hero section */
+    padding: 0;
+  }
+  .hero-section {
+    background-image: url('static/about-us/about-herosection.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .hero-content {
+    padding-left: 6%;
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .hero-tagline {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-weight: 400;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+  }
+
+  .hero-btn {
+    margin-top: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .hero-btn:hover {
+    color: #ccc;
+    border-color: #ccc;
+  }
+
+  .bottom-text {
+    position: absolute;
+    bottom: 40px;
+    left: 6%;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .bottom-text p {
+    margin: 4px 0;
+  }
+</style>
+
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">About Our Mission</h1>
+    <p class="hero-tagline">Exploring the Cosmos, Empowering Discovery.</p>
+    <p class="hero-desc">We are dedicated to unlocking the mysteries of the universe through innovative research, advanced space missions, and a commitment to knowledge.</p>
+    <a href="/contact" class="hero-btn">
+      Contact Us
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6.364 13.657a.5.5 0 0 0 .707 0L14 6.728V12.5a.5.5 0 0 0 1 0v-7A.5.5 0 0 0 14.5 5h-7a.5.5 0 0 0 0 1h5.772L6.364 12.95a.5.5 0 0 0 0 .707z"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="bottom-text">
+    <p>Driven by passion, powered by science.</p>
+    <p>Building the future of interstellar research.</p>
+    <p>Every mission brings us closer to the stars.</p>
+  </div>
+</section>
+
+
+{% comment %} this is our vision and mission {% endcomment %}
+
+<style>
+  .mission-section {
+    background-color: #000;
+    color: white;
+    padding: 80px 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .mission-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .mission-content {
+    margin-top: 130px;
+  }
+
+  .mission-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .mission-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+</style>
+
+<section class="mission-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Image -->
+      <div class="col-md-6">
+        <img src="static/about-us/mars-mission.png" alt="Our Mission" class="mission-img">
+      </div>
+
+      <!-- Right Text -->
+      <div class="col-md-6">
+        <div class="mission-content">
+          <h2 class="mission-heading">Our Mission</h2>
+          <p class="mission-text">
+            At our Space Research Organization, our mission is to ignite curiosity and expand the boundaries of what’s possible. 
+            We strive to explore the cosmos through advanced technologies, global partnerships, and relentless research. 
+            By launching cutting-edge missions and fostering innovation, we aim to uncover the mysteries of space. 
+            Every initiative is a step toward understanding our place in the universe. 
+            We believe in making space accessible, secure, and beneficial for all humankind. 
+            Our passion fuels the future of exploration and discovery.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is our vision {% endcomment %}
+
+<style>
+  .vision-section {
+    background-color: #000;
+    color: white;
+    padding: 80px 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .vision-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .vision-content {
+    margin-top: 130px;
+  }
+
+  .vision-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .vision-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+</style>
+
+<section class="vision-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Text -->
+      <div class="col-md-7">
+        <div class="vision-content">
+          <h2 class="vision-heading">Our Vision</h2>
+          <p class="vision-text">
+            Our vision is to pioneer the next generation of space discovery. We envision a future where humanity reaches beyond the stars and thrives in the vast expanse of the universe.
+            Through innovation and collaboration, we aim to develop technologies that redefine space exploration.
+            We aspire to inspire the next wave of scientists, dreamers, and explorers across the globe.
+            By uniting science with purpose, we will push the boundaries of what’s known and achievable.
+            We see a world where space is not the limit—but the beginning of infinite possibilities.
+            Together, we move toward a cosmic future filled with discovery and understanding.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-md-5">
+        <img src="static/about-us/our-vision.jpg" alt="Our Vision" class="vision-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% comment %} this is what we doo  {% endcomment %}
+
+<!-- Include Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  .what-we-do {
+    background-color: #000;
+    color: white;
+    padding: 80px 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .feature-heading {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+
+  .feature-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    height: 370px;
+    transition: transform 0.3s;
+  }
+
+  .feature-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+
+  .feature-box:hover .feature-img {
+    filter: blur(3px);
+    transform: scale(1.05);
+  }
+
+  .feature-overlay-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Transparent black */
+    z-index: 1;
+  }
+
+  .feature-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 2;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .feature-desc {
+    font-size: 0.95rem;
+    margin-top: 10px;
+  }
+
+  .feature-btn {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: white;
+    color: black;
+    padding: 6px 16px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .feature-btn:hover {
+    background-color: #5c5c5c;
+    color: black;
+    box-shadow: 0 0 10px white;
+  }
+</style>
+
+<section class="what-we-do">
+  <div class="container">
+    <h2 class="feature-heading">Expanding Horizons: What We Do</h2>
+    <div class="row gx-4">
+      
+      <!-- Feature 1 -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="https://images.pexels.com/photos/586054/pexels-photo-586054.jpeg" class="feature-img" alt="Launch Missions">
+          <div class="feature-overlay-full"></div>
+          <div class="feature-overlay">
+            <div class="feature-title">Launch Missions</div>
+            <div class="feature-desc">We develop and launch satellites and exploratory spacecrafts to study deep space and Earth.</div>
+            <a href="#" class="feature-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="https://images.pexels.com/photos/39896/space-station-moon-landing-apollo-15-james-irwin-39896.jpeg" class="feature-img" alt="Astrophysics Research">
+          <div class="feature-overlay-full"></div>
+          <div class="feature-overlay">
+            <div class="feature-title">Space Research</div>
+            <div class="feature-desc">Our scientists explore black holes, dark matter, and the origin of the universe using cutting-edge tools.</div>
+            <a href="#" class="feature-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg" class="feature-img" alt="Robotic Systems">
+          <div class="feature-overlay-full"></div>
+          <div class="feature-overlay">
+            <div class="feature-title">Robotic Systems</div>
+            <div class="feature-desc">From Mars rovers to lunar bots, we build intelligent robots for interplanetary exploration.</div>
+            <a href="#" class="feature-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="col-md-3">
+        <div class="feature-box">
+          <img src="https://images.pexels.com/photos/3396655/pexels-photo-3396655.jpeg" class="feature-img" alt="Earth Observation">
+          <div class="feature-overlay-full"></div>
+          <div class="feature-overlay">
+            <div class="feature-title">Earth Observation</div>
+            <div class="feature-desc">Monitoring climate, weather, and natural disasters using high-resolution space imagery.</div>
+            <a href="#" class="feature-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+{% comment %} this is timelines {% endcomment %}
+
+<!-- Bootstrap & Font CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  .journey-section {
+    background-image: url('static/about-us/timline-im.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .journey-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    z-index: 1;
+  }
+
+  .journey-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .journey-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+  }
+
+  .timeline-item {
+    margin-bottom: 40px;
+  }
+
+  .timeline-year {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #dcdcdc;
+  }
+
+  .timeline-desc {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    line-height: 1.8;
+    color: #f1f1f1;
+  }
+
+  .journey-cta {
+    margin-top: 60px;
+  }
+
+  .cta-btn {
+  background-color: transparent;
+  color: white;
+  font-weight: 700;
+  padding: 12px 30px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+}
+
+  .cta-btn:hover {
+  color: grey;
+  text-decoration: none;
+}
+</style>
+
+<section class="journey-section">
+  <div class="journey-content">
+    <h2 class="journey-title">Our Journey Beyond Earth</h2>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2023 – Inception</div>
+      <div class="timeline-desc">
+        Founded with a dream to redefine humanity’s connection with the cosmos, our journey began with bold ideas and an unshakable vision.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2024 – Project Helios Launch</div>
+      <div class="timeline-desc">
+        Our solar exploration satellite, Project Helios, unlocked data that advanced solar storm prediction and space climate science.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2025 – Asteroid Navigation Breakthrough</div>
+      <div class="timeline-desc">
+        We became the first private entity to autonomously navigate and scan an asteroid belt, opening doors to future interplanetary mining.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2026 – Quantum Comms in Orbit</div>
+      <div class="timeline-desc">
+        Pioneered quantum-encrypted communications in Earth orbit, ensuring data privacy for future space missions.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2027 – Lunar Rover Prototype</div>
+      <div class="timeline-desc">
+        Successfully tested a lunar rover in extreme desert conditions, simulating moon terrain and expanding robotic possibilities.
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-year">2028 – Mars Lab Concept Approval</div>
+      <div class="timeline-desc">
+        Our proposal for a self-sustained Martian habitat was accepted for international review, marking a giant leap in extraterrestrial living.
+      </div>
+    </div>
+
+    <div class="journey-cta">
+      <a href="/contact" class="cta-btn">Join Our Mission</a>
+    </div>
+  </div>
+</section>
+
+
+{% endblock body %}

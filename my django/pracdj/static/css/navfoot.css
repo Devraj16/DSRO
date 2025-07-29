@@ -1,0 +1,32 @@
+/* Base styles */
+.navbar {
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #444;
+}
+
+/* When at top: solid black */
+.navbar-top {
+  background-color: black !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* When scrolled: transparent */
+.navbar-scrolled {
+  background-color: rgba(0, 0, 0, 0) !important;
+  box-shadow: none;
+}
+
+/* Search button icon */
+.search-icon-btn i {
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-icon-btn:hover {
+  background-color: white;
+}
+
+.search-icon-btn:hover i {
+  color: black;
+}

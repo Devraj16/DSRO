@@ -1,0 +1,992 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+
+<!-- Bootstrap CSS & Font -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+  }
+
+  .hero-slider {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .hero-slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* black transparent overlay */
+    z-index: 2;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  .hero-tagline {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    max-width: 700px;
+  }
+
+  .hero-btn {
+    margin-top: 2rem;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  .hero-btn:hover {
+    color: #c0c0c0;
+  }
+</style>
+
+<!-- HERO SECTION -->
+<section class="hero-slider">
+  <!-- Background Slides -->
+  <div class="hero-slide active" style="background-image: url('https://images.pexels.com/photos/30596212/pexels-photo-30596212.jpeg');"></div>
+  <div class="hero-slide" style="background-image: url('https://images.pexels.com/photos/23789/pexels-photo.jpg');"></div>
+  <div class="hero-slide" style="background-image: url('https://images.ctfassets.net/cnu0m8re1exe/45MlPe2QEfOO2e50h0Qo00/0266d9a60d9ca0f91b8bbd529ce49b40/Astronaut-Exploring-Moon-Rover-And-Earth-Background.jpg');"></div>
+
+  <!-- Overlay -->
+  <div class="hero-overlay"></div>
+
+  <!-- Text Content -->
+  <div class="hero-content">
+    <h1 class="hero-title">Charting the Cosmos, One Mission at a Time</h1>
+    <p class="hero-tagline">Founded in 2023, Devraj’s Space Research Organization is on a relentless pursuit—to build the future of interstellar life, power civilizations beyond Earth, and reach where no human has dared.</p>
+    <a href="/contact" class="hero-btn">Join the Journey</a>
+  </div>
+</section>
+
+<!-- JavaScript for Slideshow -->
+<script>
+  let slides = document.querySelectorAll('.hero-slide');
+  let index = 0;
+
+  setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }, 5000);
+</script>
+
+
+
+{% comment %} this is snap shot {% endcomment %}
+
+<!-- Bootstrap CDN (if not already included) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+  .about-snapshot {
+    background-color: #000;
+    color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 80px 5%;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .about-left {
+    flex: 0 0 40%;
+    max-width: 40%;
+    padding-right: 40px;
+  }
+
+  .about-left h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .about-left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+
+  .about-btn {
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 24px;
+    transition: 0.3s ease;
+    font-size: 1rem;
+  }
+
+  .about-btn:hover {
+    color: #ccc;
+  }
+
+  .about-right {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+
+  .about-right img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    .about-snapshot {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .about-left, .about-right {
+      max-width: 100%;
+      flex: 0 0 100%;
+      padding: 0;
+    }
+
+    .about-left {
+      margin-bottom: 30px;
+    }
+  }
+</style>
+
+<section class="about-snapshot">
+  <div class="about-left">
+    <h2>Visionary Origins</h2>
+    <p>
+      Founded in 2023, Devraj’s Space Research Organization is driven by the pursuit of space innovation. 
+      We are dedicated to building reusable rockets, exploring the outer limits of our solar system, and 
+      shaping future civilizations on habitable planets.
+    </p>
+    <a href="/about" class="about-btn">Read More</a>
+  </div>
+
+  <div class="about-right">
+    <img src="https://images.pexels.com/photos/586061/pexels-photo-586061.png" alt="About Space Mission Snapshot">
+  </div>
+</section>
+
+{% comment %} this is the mission highlights  {% endcomment %}
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .mission-section {
+      padding: 50px 0;
+      background-color: #000;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: white;
+    }
+
+    .scroll-container {
+      overflow: hidden;
+      position: relative;
+      padding: 50px 0;
+    }
+
+    .scroll-track {
+      display: flex;
+      gap: 24px;
+      width: max-content;
+      animation: scroll-linear 40s linear infinite;
+    }
+
+    .scroll-container:hover .scroll-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes scroll-linear {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .purpose-card {
+      flex: 0 0 300px;
+      height: 360px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .purpose-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px gray;
+    }
+
+    .card-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      transition: filter 0.3s ease;
+    }
+
+    .purpose-card:hover .card-bg {
+      filter: blur(2px) brightness(1);
+    }
+
+    .card-content {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem;
+      color: #fff;
+    }
+
+    .card-content h5 {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<section class="mission-section">
+  <div class="container">
+    <h2 class="section-title">Our Cosmic Purpose</h2>
+
+    <div class="scroll-container">
+      <div class="scroll-track" id="card-track">
+        <!-- Cards go here -->
+        <div class="purpose-card">
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/1252873/pexels-photo-1252873.jpeg');"></div>
+          <div class="card-content">
+            <h5>Innovation</h5>
+            <p>Pushing the boundaries of space technology.</p>
+          </div>
+        </div>
+
+        <div class="purpose-card">
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/262786/pexels-photo-262786.jpeg');"></div>
+          <div class="card-content">
+            <h5>Discovery</h5>
+            <p>Unveiling the mysteries of the cosmos.</p>
+          </div>
+        </div>
+
+        <div class="purpose-card">
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/1819651/pexels-photo-1819651.jpeg');"></div>
+          <div class="card-content">
+            <h5>Sustainability</h5>
+            <p>Protecting the future with responsible exploration.</p>
+          </div>
+        </div>
+
+        <div class="purpose-card">
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/30238187/pexels-photo-30238187.jpeg');"></div>
+          <div class="card-content">
+            <h5>Collaboration</h5>
+            <p>Uniting minds and missions across the globe.</p>
+          </div>
+        </div>
+
+        <div class="purpose-card">
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/34521/space-shuttle-lift-off-liftoff-nasa.jpg');"></div>
+          <div class="card-content">
+            <h5>Excellence</h5>
+            <p>Striving for perfection in every mission.</p>
+          </div>
+        </div>
+
+        <div class="purpose-card">
+          <div class="card-bg" style="background-image: url('https://images.pexels.com/photos/586117/pexels-photo-586117.jpeg');"></div>
+          <div class="card-content">
+            <h5>Future Focus</h5>
+            <p>Innovating today to shape tomorrow’s universe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Infinite loop logic: clone the cards once to create a seamless loop
+  const track = document.getElementById('card-track');
+  const cards = Array.from(track.children);
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    track.appendChild(clone);
+  });
+</script>
+
+
+{% comment %} this is what to do {% endcomment %}
+
+
+<!-- Services Section -->
+<section class="services-grid">
+  <div class="container">
+    <h2 class="section-title">What We Do</h2>
+    <p class="section-subtext">
+  At Devraj’s Space Research Organization, we push the boundaries of space innovation—designing reusable rockets, researching future megastructures like Dyson Spheres, and preparing for interplanetary colonization. Our work blends science, engineering, and imagination to create a sustainable future beyond Earth.
+</p>
+    <div class="row g-4">
+
+      <!-- Box 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card" style="background-image: url('https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg');">
+          <div class="overlay">
+            <h4><b>Dyson Sphere</b></h4>
+            <p>A Dyson sphere is a hypothetical megastructure that encompasses a star and captures a large percentage of its power output.</p>
+            <a href="{% url 'dyson' %}" class="service-icon"><span>+</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card" style="background-image: url('https://images.pexels.com/photos/586041/pexels-photo-586041.jpeg');">
+          <div class="overlay">
+            <h4><b>Mission Voidwalker</b></h4>
+            <p>The whole point of this system is that no specific Starchetype is better than another.</p>
+            <a href="{% url 'voidwalker' %}" class="service-icon"><span>+</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card" style="background-image: url('https://images.pexels.com/photos/110854/pexels-photo-110854.jpeg');">
+          <div class="overlay">
+            <h4><b>Kepler Odyssey</b></h4>
+            <p>Kepler, a prominent German mathematician, formulated the famous “Kepler’s Law of Planetary Motion”.</p>
+            <a href="{% url 'kepler' %}" class="service-icon"><span>+</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card" style="background-image: url('https://images.pexels.com/photos/256369/pexels-photo-256369.jpeg');">
+          <div class="overlay">
+            <h4><b>Intergalactic Quest</b></h4>
+            <p>Intergalactic Quest: Humanity's bold journey beyond our galaxy through advanced space exploration.</p>
+            <a href="{% url 'intergalactic'%}" class="service-icon"><span>+</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 5 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card" style="background-image: url('https://images.pexels.com/photos/586032/pexels-photo-586032.jpeg');">
+          <div class="overlay">
+            <h4><b>Quantum Tunnels</b></h4>
+            <p>Particles penetrating energy barriers they classically shouldn't overcome through quantum mechanical effects.</p>
+            <a href="{% url 'quantum'%}" class="service-icon"><span>+</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 6 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-card" style="background-image: url('https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg');">
+          <div class="overlay">
+            <h4><b>Planetary Terraforming</b></h4>
+            <p>Transforming alien worlds into Earth-like environments to support human life.</p>
+            <a href="{% url 'terraforming' %}" class="service-icon"><span>+</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Styles -->
+<style>
+/* Section */
+.services-grid {
+  background-color: #000;
+  padding: 60px 0;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-subtext {
+  text-align: center;
+  color: #ccc;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+
+/* Card */
+.service-card {
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Overlay */
+.service-card .overlay {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: none;
+  transition: background 0.4s ease;
+}
+
+/* Gradient Overlay on Hover */
+.service-card:hover .overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.6) 60%);
+}
+
+/* Text */
+.service-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+/* Circular Icon */
+.service-icon {
+  align-self: flex-end;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.service-icon span {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for icon */
+.service-icon:hover {
+  background: gray;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+  transform: scale(1.4);
+}
+
+.service-icon:hover span {
+  color: white;
+  transform: scale(1.4);
+}
+</style>
+
+
+{% comment %} mission and vision {% endcomment %}
+
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 80px;
+  }
+
+  .overlay-content {
+    max-width: 600px;
+    z-index: 2;
+  }
+
+  .overlay-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .overlay-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 15px;
+  }
+
+  .btn-white {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .btn-white:hover {
+    background-color: transparent;
+    color: white;
+  }
+
+  .btn-transparent {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+
+  .btn-transparent:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .swiper-slide::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+  }
+</style>
+
+<!-- Swiper HTML -->
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div class="swiper-slide" style="background-image: url('https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg')">
+      <div class="overlay-content">
+        <h1>Our Mission: Rewriting Humanity’s Frontier</h1>
+        <p>We aim to redefine the boundaries of possibility by building reusable launch systems, deploying advanced satellites, and pushing the envelope of interplanetary travel for the benefit of Earth and beyond.</p>
+        <div class="btn-container">
+          <a href="#" class="btn-white">Login</a>
+          <a href="#" class="btn-transparent">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide" style="background-image: url('https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg')">
+      <div class="overlay-content">
+        <h1>Our Vision: A Multi-Planetary Civilization</h1>
+        <p>At DSRO, we envision a future where humanity thrives across the solar system, powered by Dyson Sphere technology and sustainable colonization of planets through robotic and AI-driven research systems.</p>
+        <div class="btn-container">
+          <a href="#" class="btn-white">Login</a>
+          <a href="#" class="btn-transparent">About Us</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide" style="background-image: url('https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg')">
+      <div class="overlay-content">
+        <h1>We Believe: Space Solves Earth’s Challenges</h1>
+        <p>From climate monitoring to renewable energy innovation, our projects harness the power of space to tackle the most pressing issues on Earth—ensuring a sustainable, secure future for all.</p>
+        <div class="btn-container">
+          <a href="#" class="btn-white">Login</a>
+          <a href="#" class="btn-transparent">About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    effect: "fade",
+  });
+</script>
+
+
+{% comment %} thi is timeline achiments {% endcomment %}
+
+<section class="rev-carousel-container">
+  <h1 class="main-carousel-title">DSRO’s Voyage to the Future</h1>
+
+  <div class="rev-carousel">
+    <button class="rev-btn left" onclick="changeRevSlide(-1)">&#10094;</button>
+
+    <div class="rev-slide active">
+      <h2>2023 – DSRO Was Born</h2>
+      <p>Devraj’s Space Research Organization was officially founded with the vision of pioneering space innovation.<br>
+      Our goal: make space technology more accessible, efficient, and sustainable.<br>
+      We laid down the foundation of our labs, recruited core talent, and defined our long-term strategy.<br>
+      This was the beginning of a bold journey toward the stars.</p>
+    </div>
+
+    <div class="rev-slide">
+      <h2>2024 — First Satellite Launched</h2>
+      <p>DSRO successfully launched its first satellite, DS-1, into low-earth orbit.<br>
+      This satellite focused on earth observation and weather data collection.<br>
+      It marked our first real-world milestone in the aerospace sector.<br>
+      Partnerships with universities and startups grew significantly this year.</p>
+    </div>
+
+    <div class="rev-slide">
+      <h2>2025 — Reusable Rocket Launch</h2>
+      <p>We achieved a major breakthrough with the testing of our first reusable rocket system.<br>
+      The rocket launched and landed vertically, cutting mission costs by 60%.<br>
+      Our R&D team began building modular launch vehicles for multi-purpose missions.<br>
+      DSRO gained international recognition for its low-cost, sustainable approach.</p>
+    </div>
+
+    <div class="rev-slide">
+      <h2>2026 — Deep Space Program</h2>
+      <p>We initiated our Deep Space Program focused on interplanetary missions.<br>
+      The goal: explore Mars orbit, asteroid belts, and long-duration satellite operations.<br>
+      Collaboration with global space agencies brought new scientific insight.<br>
+      This year marked DSRO’s transition from low-earth to deep space ambitions.</p>
+    </div>
+
+    <div class="rev-slide">
+      <h2>2027 — Quantum Tech in Space</h2>
+      <p>We deployed quantum communication payloads enabling ultra-secure satellite links.<br>
+      DSRO began working on real-time data sharing between Earth and orbital systems.<br>
+      Space-grade quantum computing prototypes were introduced in our labs.<br>
+      It positioned DSRO as a leader in next-gen aerospace tech.</p>
+    </div>
+
+    <button class="rev-btn right" onclick="changeRevSlide(1)">&#10095;</button>
+  </div>
+</section>
+
+<style>
+.rev-carousel-container {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-carousel-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.rev-carousel {
+  position: relative;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rev-slide {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.rev-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.rev-slide h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.rev-slide p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Carousel Buttons */
+.rev-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.rev-btn:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.rev-btn.left {
+  left: 20px;
+}
+
+.rev-btn.right {
+  right: 20px;
+}
+</style>
+
+<script>
+let revCurrentSlide = 0;
+const revSlides = document.querySelectorAll('.rev-slide');
+
+function showRevSlide(index) {
+  revSlides.forEach((slide, i) => {
+    slide.classList.remove('active');
+    if (i === index) slide.classList.add('active');
+  });
+}
+
+function changeRevSlide(direction) {
+  revCurrentSlide = (revCurrentSlide + direction + revSlides.length) % revSlides.length;
+  showRevSlide(revCurrentSlide);
+}
+
+// Auto-change every 5 seconds
+setInterval(() => {
+  changeRevSlide(1);
+}, 5000);
+
+// Show first slide on load
+showRevSlide(revCurrentSlide);
+</script>
+
+
+
+{% comment %} this is cta {% endcomment %}
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="cta-overlay">
+    <div class="cta-content">
+      <h2>Join Us in Our Next Space Mission</h2>
+      <p>Be a part of the journey to redefine space exploration and shape the future of humanity beyond Earth.</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn-white">Contact</a>
+        <a href="#volunteer" class="btn-transparent">Volunteer</a>
+        <a href="#careers" class="btn-white">Explore Careers</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA CSS -->
+<style>
+  .cta-section {
+    background-image: url('https://images.pexels.com/photos/23769/pexels-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .cta-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta-content {
+    text-align: center;
+    color: white;
+    max-width: 800px;
+  }
+
+  .cta-content h2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  .cta-content p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .cta-buttons a {
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .btn-white {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+  }
+
+  .btn-white:hover {
+    background-color: transparent;
+    color: white;
+  }
+
+  .btn-transparent {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .btn-transparent:hover {
+    background-color: white;
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    .cta-content h2 {
+      font-size: 2rem;
+    }
+
+    .cta-content p {
+      font-size: 1rem;
+    }
+  }
+</style>
+
+
+{% endblock body %}

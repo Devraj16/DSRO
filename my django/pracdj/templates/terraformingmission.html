@@ -1,0 +1,736 @@
+{% extends "base.html" %}
+{% block title %}Quantum Tunnels{% endblock title %}
+
+{% block body %} 
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planetary Terraforming | Space Research</title>
+
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/dyson.css' %}">
+</head>
+
+
+
+<body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+
+{% comment %} this is hero section {% endcomment %}
+
+
+
+
+  <section class="enhanced-hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1630694093867-4b947d812bf0?q=80&w=1315&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1722850998715-91dcb2b7d327?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1614732414444-096e5f1122d5?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="hero-content-box">
+      <div class="hero-content text-center">
+        <h1>Terraforming Other Planets and Moons for Human Habitation</h1>
+        <p>Exploring the massive challenges of altering planetary atmospheres and ecologies to support human life.</p>
+        <a href="#learn-more" class="btn-cta">Learn More</a>
+      </div>
+    </div>
+
+
+
+    <!-- Main Content -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card bg-dark text-white border-light shadow-sm p-4">
+            <h2 class="mb-3 text-center">Planetary Terraforming</h2>
+            <ul class="mb-0">
+              <li>Altering a planet's atmosphere and ecology to support human life (e.g., Mars terraforming) demands centuries or millennia with massive resources, and it remains speculative.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+{% comment %} this is remaining time {% endcomment %}
+
+
+<section class="hero-countdown">
+  <div class="countdown-container">
+    <h1 class="hero-heading">MISSION LAUNCH IN</h1>
+    <div class="countdown-grid">
+      <div class="countdown-item">
+        <div class="number" id="years">00</div>
+        <div class="label">YEARS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="months">00</div>
+        <div class="label">MONTHS</div>
+      </div>
+      <div class="countdown-item">
+        <div class="number" id="days">000</div>
+        <div class="label">DAYS</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is third section {% endcomment %}
+
+<section class="dyson-section">
+  <h2 class="dyson-title">Terraforming Other Planets and Moons for Human Habitation</h2>
+  <p class="dyson-subtitle">Exploring the massive challenges of altering planetary atmospheres and ecologies to support human life.</p>
+
+
+  <div class="dyson-grid">
+    <div class="dyson-card">
+      <div class="dyson-icon">🌍</div>
+      <h3 class="dyson-card-title">Atmospheric Transformation</h3>
+      <p class="dyson-card-text">Altering a planet's atmosphere to support human life requires massive atmospheric processing and chemical engineering over centuries.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Centuries</span>
+          <span class="stat-label">Time Required</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Massive</span>
+          <span class="stat-label">Resource Demands</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Gas Composition</span>
+        <span class="feature-tag">Pressure Control</span>
+      </div>
+    </div>
+
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🔴</div>
+      <h3 class="dyson-card-title">Mars Terraforming Challenges</h3>
+      <p class="dyson-card-text">Mars terraforming faces extreme challenges including thin atmosphere, radiation exposure, and lack of magnetic field protection.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">1%</span>
+          <span class="stat-label">Earth's Atmospheric Pressure</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">No</span>
+          <span class="stat-label">Magnetic Field</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Radiation Shielding</span>
+        <span class="feature-tag">Temperature Control</span>
+      </div>
+    </div>
+
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🌱</div>
+      <h3 class="dyson-card-title">Ecological Engineering</h3>
+      <p class="dyson-card-text">Creating self-sustaining ecosystems on alien worlds requires introducing Earth organisms and managing complex biological interactions.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Complex</span>
+          <span class="stat-label">Ecosystem Balance</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Millennia</span>
+          <span class="stat-label">Ecosystem Development</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Soil Creation</span>
+        <span class="feature-tag">Biosphere Management</span>
+      </div>
+    </div>
+
+
+    <div class="dyson-card">
+      <div class="dyson-icon">🔬</div>
+      <h3 class="dyson-card-title">Speculative Technology</h3>
+      <p class="dyson-card-text">Terraforming remains largely speculative with unproven technologies and unknown environmental consequences across planetary scales.</p>
+      <div class="dyson-stats">
+        <div class="stat-item">
+          <span class="stat-number">Speculative</span>
+          <span class="stat-label">Current Status</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">Unknown</span>
+          <span class="stat-label">Environmental Impact</span>
+        </div>
+      </div>
+      <div class="dyson-features">
+        <span class="feature-tag">Unproven Methods</span>
+        <span class="feature-tag">Planetary Scale</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is fourth section {% endcomment %}
+
+<section class="dyson-model-section">
+  <!-- Background Images -->
+  <div class="background-video">
+    <div class="video-bg" id="video-bg" style="
+      background-image: url('https://static.wikia.nocookie.net/alldimensions/images/0/02/Universe-expanding-acceleration-1.jpg/revision/latest?cb=20180818180210');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+    <!-- Fallback background -->
+    <div class="video-fallback" style="
+      background-image: url('https://bigthink.com/wp-content/uploads/2021/10/34614657983_26066212d8_k.jpg?resize=1200,630');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    "></div>
+  </div>
+
+
+
+  <!-- Overlay Content -->
+  <div class="video-overlay">
+    <!-- Top Content Overlay -->
+    <div class="overlay-content">
+      <div class="intro-badge">
+        <span class="badge-icon">🌍</span>
+        <span class="badge-text">Terraforming Other Planets and Moons for Human Habitation</span>
+      </div>
+      
+      <div class="intro-stats">
+        <div class="stat-card">
+          <div class="stat-icon">⏰</div>
+          <span class="stat-number">Centuries</span>
+          <span class="stat-label">Time Required</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💰</div>
+          <span class="stat-number">Massive</span>
+          <span class="stat-label">Resource Demands</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🔬</div>
+          <span class="stat-number">Speculative</span>
+          <span class="stat-label">Current Status</span>
+        </div>
+      </div>
+
+
+
+      <div class="main-content">
+        <h2 class="dyson-heading">Planetary and Lunar Terraforming</h2>
+        <p class="dyson-subheading">
+          Altering a planet's atmosphere and ecology to support human life (e.g., Mars terraforming) demands centuries or millennia with massive resources, and it remains speculative.
+        </p>
+      </div>
+
+
+
+      <div class="construction-phases">
+        <div class="phase-item">
+          <span class="phase-number">01</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Atmospheric Engineering</h4>
+            <p class="phase-desc">Centuries of chemical processing</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">02</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Ecological Development</h4>
+            <p class="phase-desc">Millennia for stable ecosystems</p>
+          </div>
+        </div>
+        <div class="phase-item">
+          <span class="phase-number">03</span>
+          <div class="phase-info">
+            <h4 class="phase-title">Massive Resource Investment</h4>
+            <p class="phase-desc">Planetary-scale engineering</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="tech-highlights">
+        <div class="highlight-item">
+          <div class="highlight-icon">🌍</div>
+          <span class="highlight-text">Atmospheric Control</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🔴</div>
+          <span class="highlight-text">Mars Transformation</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🌱</div>
+          <span class="highlight-text">Ecosystem Creation</span>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-icon">🔬</div>
+          <span class="highlight-text">Speculative Science</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is technology challenges {% endcomment %}
+
+<section class="challenges-section">
+  <div class="challenges-container">
+    <div class="section-header">
+      <h2 class="section-heading">TERRAFORMING CHALLENGES + IMPOSSIBILITIES</h2>
+      <p class="section-description">
+        Altering planetary atmospheres and ecologies to support human life faces massive resource demands and centuries-long timeframes. These fundamental limitations reveal the boundaries between ambitious vision and practical reality.
+      </p>
+    </div>
+
+
+    <div class="challenges-content">
+      <div class="challenge-item">
+        <h3 class="challenge-title">Atmospheric Transformation Requirements</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Terraforming requires completely altering a planet's atmospheric composition, pressure, and temperature to create breathable conditions for human life over centuries.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Mars has only 1% of Earth's atmospheric pressure and lacks oxygen, requiring massive atmospheric processing plants operating continuously for hundreds of years to create viable conditions.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Massive Resource Investment Impossibility</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Terraforming demands planetary-scale engineering projects requiring resources equivalent to multiple Earth economies operating for centuries or millennia.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> The energy and materials needed to transform entire planetary atmospheres exceed humanity's current industrial capacity by orders of magnitude, making such projects economically impossible.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Ecological Engineering Barriers</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Creating self-sustaining ecosystems on alien worlds requires introducing Earth organisms and managing complex biological interactions across millennia.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Ecosystems take millions of years to develop naturally, and artificially creating stable biospheres on hostile worlds faces unknown environmental consequences and biological failures.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Radiation and Magnetic Field Deficits</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Many planets lack protective magnetic fields, exposing surfaces to deadly cosmic radiation that would sterilize any atmosphere and kill introduced organisms.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Mars has no global magnetic field, allowing solar wind to strip away any artificially created atmosphere while bombarding the surface with lethal radiation levels.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Temperature and Climate Control Problems</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Maintaining stable temperatures suitable for human life requires controlling planetary albedo, greenhouse effects, and heat distribution across entire worlds.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Mars averages -80°F with extreme temperature swings, requiring massive energy inputs to warm the planet while preventing runaway greenhouse effects that could make it uninhabitable.
+        </p>
+      </div>
+
+
+      <div class="challenge-item">
+        <h3 class="challenge-title">Speculative Technology Foundation</h3>
+        <p class="challenge-text">
+          <strong>Challenge:</strong> Terraforming concepts rely on unproven technologies and theoretical processes that have never been tested even on small scales, let alone planetary ones.
+        </p>
+        <p class="solution-text">
+          <strong>Reality:</strong> Unlike other space technologies with clear development paths, terraforming remains largely speculative with no experimental validation or practical testing methodology for planetary-scale interventions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} this is impact {% endcomment %}
+
+<section class="impact-section">
+  <div class="impact-container">
+    <div class="section-header">
+      <h2 class="section-heading">IMPACT & BENEFITS TO HUMANITY</h2>
+      <p class="section-description">
+        Understanding the massive challenges of terraforming planets drives atmospheric science research and helps focus humanity's exploration efforts on achievable planetary transformation technologies.
+      </p>
+    </div>
+
+
+    <div class="benefits-showcase">
+      <div class="showcase-container">
+        <div class="benefit-slide active">
+          <h3 class="benefit-title">ATMOSPHERIC SCIENCE ADVANCEMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Researching planetary atmosphere transformation drives breakthrough discoveries in atmospheric chemistry, climate engineering, and large-scale environmental management.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> These scientific advances revolutionize our understanding of planetary systems and lead to innovative technologies for Earth's climate management and environmental restoration.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">REALISTIC TIMELINE RECOGNITION</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Understanding that terraforming requires centuries or millennia provides crucial perspective on the massive scale and timeframes of planetary engineering projects.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This knowledge helps scientists establish realistic goals for planetary exploration and prioritize achievable habitat technologies for space colonization.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">ALTERNATIVE HABITAT DEVELOPMENT</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Recognizing terraforming's massive resource demands redirects research toward achievable enclosed habitats, domed cities, and underground settlements.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This realistic assessment enables focus on practical life support systems, atmospheric recycling, and sustainable habitat technologies for Mars and lunar colonies.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="benefit-slide">
+          <h3 class="benefit-title">PLANETARY ENGINEERING FRAMEWORK</h3>
+          <div class="benefit-details">
+            <p class="benefit-text">
+              <strong>Benefit:</strong> Studying terraforming challenges establishes rigorous frameworks for evaluating future planetary engineering projects and their environmental consequences.
+            </p>
+            <p class="benefit-text">
+              <strong>Impact:</strong> This foundation ensures that when new atmospheric technologies emerge, we can assess their potential for planetary transformation while avoiding unrealistic expectations and resource waste.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="navigation-controls">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">‹</button>
+        <div class="slide-indicators">
+          <span class="indicator active" onclick="currentSlide(1)"></span>
+          <span class="indicator" onclick="currentSlide(2)"></span>
+          <span class="indicator" onclick="currentSlide(3)"></span>
+          <span class="indicator" onclick="currentSlide(4)"></span>
+        </div>
+        <button class="nav-btn next" onclick="changeSlide(1)">›</button>
+      </div>
+    </div>
+
+
+  <script>
+    let slideIndex = 1;
+    showSlide(slideIndex);
+
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    }
+
+
+    function currentSlide(n) {
+      showSlide(slideIndex = n);
+    }
+
+
+    function showSlide(n) {
+      let slides = document.getElementsByClassName("benefit-slide");
+      let indicators = document.getElementsByClassName("indicator");
+      
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      
+      for (let i = 0; i < indicators.length; i++) {
+        indicators[i].classList.remove("active");
+      }
+      
+      slides[slideIndex-1].classList.add("active");
+      indicators[slideIndex-1].classList.add("active");
+    }
+
+
+    // Auto advance slides
+    setInterval(() => {
+      changeSlide(1);
+    }, 6000);
+  </script>
+</section>
+
+{% comment %} this is faq {% endcomment %}
+
+<section class="faq-section">
+  <div class="faq-container">
+    <div class="section-header">
+      <h2 class="section-heading">FREQUENTLY ASKED QUESTIONS</h2>
+      <p class="section-description">
+        Common questions about terraforming other planets and the massive challenges of altering planetary atmospheres and ecologies to support human life.
+      </p>
+    </div>
+
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What is planetary terraforming?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Planetary terraforming refers to the process of altering a planet's atmosphere and ecology to support human life. This includes transforming atmospheric composition, temperature, pressure, and creating sustainable ecosystems on worlds like Mars to make them habitable for humans.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Why does terraforming take centuries or millennia?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Terraforming demands centuries or millennia because it requires completely transforming planetary-scale systems. Atmospheric processing, ecosystem development, and climate stabilization operate on geological timescales, far exceeding human lifespans and requiring sustained effort across multiple generations.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What makes terraforming so resource-intensive?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Terraforming requires massive resources because it involves planetary-scale engineering projects. The energy needed to alter entire atmospheric compositions, create protective magnetic fields, and establish global ecosystems exceeds humanity's current industrial capacity by orders of magnitude.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are the main challenges of terraforming Mars?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Mars terraforming faces extreme challenges including only 1% of Earth's atmospheric pressure, lack of a protective magnetic field, deadly radiation exposure, and average temperatures of -80°F. These conditions would require massive atmospheric processing and planetary-scale engineering to overcome.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">Could we create ecosystems on alien worlds?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Creating self-sustaining ecosystems on alien worlds faces enormous challenges including soil creation, atmospheric composition management, and complex biological interactions. Natural ecosystems take millions of years to develop, and artificially creating stable biospheres involves unknown environmental consequences.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFAQ(this)">
+          <h3 class="question-text">What are the benefits of studying terraforming concepts?</h3>
+          <span class="toggle-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          <p class="answer-text">
+            Studying terraforming drives atmospheric science advancement and climate engineering research, helps establish realistic timelines for planetary exploration, and redirects focus toward achievable habitat technologies like enclosed settlements and life support systems for space colonization.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function toggleFAQ(element) {
+      const faqItem = element.parentNode;
+      const answer = faqItem.querySelector('.faq-answer');
+      const icon = element.querySelector('.toggle-icon');
+      
+      // Close all other FAQs
+      document.querySelectorAll('.faq-item').forEach(item => {
+        if (item !== faqItem) {
+          item.classList.remove('active');
+          item.querySelector('.toggle-icon').textContent = '+';
+        }
+      });
+      
+      // Toggle current FAQ
+      if (faqItem.classList.contains('active')) {
+        faqItem.classList.remove('active');
+        icon.textContent = '+';
+      } else {
+        faqItem.classList.add('active');
+        icon.textContent = '−';
+      }
+    }
+  </script>
+</section>
+
+{% comment %} this is cta {% endcomment %}
+
+<section class="cta-section">
+  <div class="bg-overlay"></div>
+  <div class="bg-image" style="
+    background-image: url('https://images.unsplash.com/photo-1709142221200-1a8a73fced2a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "></div>
+  
+  <div class="cta-container">
+    <div class="mission-header">
+      <h2 class="cta-heading">THIS IS NOT SCIENCE FICTION. IT'S PLANETARY REALITY.</h2>
+      <div class="header-divider">
+        <div class="divider-glow"></div>
+      </div>
+      <p class="cta-description">
+        Altering a planet's atmosphere and ecology to support human life (e.g., Mars terraforming) demands centuries or millennia with massive resources, and it remains speculative.
+      </p>
+    </div>
+
+
+    <div class="mission-call">
+      <div class="call-content">
+        <h3 class="call-title">UNDERSTAND THE CHALLENGE</h3>
+        <p class="call-text">
+          Terraforming requires centuries of atmospheric processing and massive resource investments that exceed current industrial capacity. Join us in exploring these planetary engineering challenges and advancing atmospheric science.
+        </p>
+        
+        <div class="cta-buttons">
+          <button class="primary-btn">
+            <span class="btn-text">EXPLORE TERRAFORMING</span>
+            <div class="btn-particles"></div>
+          </button>
+          <button class="secondary-btn">
+            <span class="btn-text">SUPPORT RESEARCH</span>
+            <div class="btn-glow"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="mission-commitment">
+      <div class="commitment-border"></div>
+      <p class="commitment-text">
+        Understanding the massive challenges of terraforming drives atmospheric science advancement and helps focus humanity's exploration efforts on achievable habitat technologies through realistic planetary engineering approaches.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<script>
+  const targetDate = new Date("9966-12-31T00:00:00Z");
+
+  function updateCountdown() {
+    const now = new Date();
+    let diff = targetDate - now;
+
+    if (diff <= 0) {
+      document.querySelector(".countdown-grid").innerHTML = "<h2>Mission Launched!</h2>";
+      return;
+    }
+
+    const years = targetDate.getFullYear() - now.getFullYear();
+    const months = targetDate.getMonth() - now.getMonth();
+    const days = Math.floor((targetDate - now) / (1000 * 60 * 60 * 24)) % 30;
+
+    document.getElementById("years").textContent = String(years).padStart(2, '0');
+    document.getElementById("months").textContent = String(months >= 0 ? months : months + 12).padStart(2, '0');
+    document.getElementById("days").textContent = String(days).padStart(3, '0');
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    // Swiper initialization
+    var swiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 5000 }
+    });
+  </script>
+</body>
+</html>
+
+
+
+{% endblock body %}
